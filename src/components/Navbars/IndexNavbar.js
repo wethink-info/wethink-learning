@@ -58,7 +58,7 @@ function IndexNavbar() {
               target="_blank"
               id="navbar-brand"
             >
-              Horizon E-learning
+              E-learning Horizon
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
               Horizon University<br/>
@@ -84,20 +84,20 @@ function IndexNavbar() {
             navbar
           >
             <Nav navbar>
-             {/*  <NavItem>
-                <NavLink
-                  href="#pablo"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
-                >
-                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
-                  <p>Download</p>
-                </NavLink>
-              </NavItem> */}
+             <NavItem>
+                  <NavLink
+                      href="#"
+                      /* onClick={(e) => {
+                        e.preventDefault();
+                        document
+                          .getElementById("download-section")
+                          .scrollIntoView();
+                      }} */
+                      >
+                      <i className="now-ui-icons "></i>
+                      <p>Blog</p>
+                  </NavLink>
+              </NavItem>
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
@@ -115,15 +115,22 @@ function IndexNavbar() {
                     All components
                   </DropdownItem>
                   <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
+                    href="#"
+                    target="_blank"
+                  >
+                    <i className="now-ui-icons  mr-1"></i>
+                    Services
+                  </DropdownItem>
+                  <DropdownItem
+                    href="#"
                     target="_blank"
                   >
                     <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
-                    Documentation
+                   About Us
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-            {/*   <NavItem>
+              <NavItem>
                 <Button
                   className="nav-link btn-neutral"
                   color="info"
@@ -131,14 +138,14 @@ function IndexNavbar() {
                   id="upgrade-to-pro"
                   onClick={(e) => e.preventDefault()}
                 >
-                  <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
-                  <p>Upgrade to PRO</p>
+                  <i className="now-ui-icons  mr-1"></i>
+                  <p>Create your account</p>
                 </Button>
                 <UncontrolledTooltip target="#upgrade-to-pro">
-                  Cooming soon!
+                  You are Welcome :)
                 </UncontrolledTooltip>
-              </NavItem> */}
-          {/*     <NavItem>
+              </NavItem>
+               <NavItem>
                 <NavLink
                   href="https://twitter.com/CreativeTim?ref=creativetim"
                   target="_blank"
@@ -150,7 +157,7 @@ function IndexNavbar() {
                 <UncontrolledTooltip target="#twitter-tooltip">
                   Follow us on Twitter
                 </UncontrolledTooltip>
-              </NavItem> */}
+              </NavItem>
               <NavItem>
                 <NavLink
                   href="https://www.facebook.com/Horizon-University-108858063955865/"

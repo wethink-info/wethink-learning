@@ -40,7 +40,7 @@ function IndexHeader() {
               src={require("assets/img/logo.4ea8f6ce.png")}
             ></img>
             <h1 className="h1-seo">E-learning plateforme</h1>
-            <h3>horizon university.</h3>
+            <h3>Horizon University.</h3>
           </div>
           <h6 className="category category-absolute">
             Designed by{" "}
