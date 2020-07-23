@@ -125,9 +125,24 @@ function IndexNavbar() {
                     href="#"
                     target="_blank"
                   >
+                    <i className="now-ui-icons  mr-1"></i>
+                    Our Offers
+                  </DropdownItem>
+                  <DropdownItem
+                    href="#"
+                    target="_blank"
+                  >
+                    <i className="now-ui-icons  mr-1"></i>
+                   Academy
+                  </DropdownItem>
+                  <DropdownItem
+                    href="#"
+                    target="_blank"
+                  >
                     <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
                    About Us
                   </DropdownItem>
+                  
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
@@ -142,9 +157,10 @@ function IndexNavbar() {
                   <p>Create your account</p>
                 </Button>
                 <UncontrolledTooltip target="#upgrade-to-pro">
-                  You are Welcome :)
+                  You are Welcome 
                 </UncontrolledTooltip>
               </NavItem>
+        
                <NavItem>
                 <NavLink
                   href="https://twitter.com/CreativeTim?ref=creativetim"
