@@ -5,6 +5,8 @@ import React from "react";
 import { Container } from "reactstrap";
 // core components
 
+import './indexHeader.css';
+
 function IndexHeader() {
   let pageHeader = React.createRef();
 
@@ -24,7 +26,7 @@ function IndexHeader() {
 
   return (
     <>
-      <div className="page-header" filter-color="blue">
+      <div className="page-header clear-filter" filter-color="blue">
         <div
           className="page-header-image"
           style={{
@@ -39,10 +41,12 @@ function IndexHeader() {
               className="n-logo"
               src={require("assets/img/logo.4ea8f6ce.png")}
             ></img>
-            <h1 className="h1-seo">E-learning plateforme</h1>
-            <h3>Horizon University.</h3>
+            <h1 className=" indexHeader">E-learning plateforme</h1>
+            <h2 >
+               A simpler, more open, and highly interactive learning experience that instructors and learners like
+             </h2>
           </div>
-          <h6 className="category category-absolute">
+          {/* <h6 className="category category-absolute">
             Designed by{" "}
             <a href="http://invisionapp.com/?ref=creativetim" target="_blank">
               <img
@@ -63,7 +67,8 @@ function IndexHeader() {
               ></img>
             </a>
             .
-          </h6>
+          </h6> */}
+        
         </Container>
       </div>
     </>

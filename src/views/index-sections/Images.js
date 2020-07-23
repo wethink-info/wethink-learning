@@ -21,13 +21,13 @@ function Images() {
               <div className="hero-images-container-1">
                 <img
                   alt="..."
-                  src={require("assets/img/hero-image-2.png")}
+                  src={require("assets/img/man-working-on-laptop-while-woman-takes-notes-3153199.jpg")}
                 ></img>
               </div>
               <div className="hero-images-container-2">
                 <img
                   alt="..."
-                  src={require("assets/img/hero-image-3.png")}
+                  src={require("assets/img/letter-blocks-247819.jpg")}
                 ></img>
               </div>
             </Col>
