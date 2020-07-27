@@ -24,7 +24,7 @@ import CompleteExamples from "./index-sections/CompleteExamples.js";
 import SignUp from "./index-sections/SignUp.js";
 import Examples from "./index-sections/Examples.js";
 import Download from "./index-sections/Download.js";
-
+import LoginPage from "./examples/LoginPage.js";
 function Index() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
@@ -49,6 +49,9 @@ function Index() {
           <Tabs />
           <Carousel />
           <NucleoIcons />
+          <SignUp />
+          <LoginPage />
+
           {/* <BasicElements />
           <Navbars />
           <Tabs />
@@ -59,7 +62,6 @@ function Index() {
           <Carousel />
           <NucleoIcons />
           <CompleteExamples />
-          <SignUp />
           <Examples />
           <Download /> */}
         </div>
