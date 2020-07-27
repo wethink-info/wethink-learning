@@ -10,9 +10,10 @@ import "assets/demo/nucleo-icons-page-styles.css?v=1.4.0";
 // pages for this kit
 import Index from "views/Index.js";
 import NucleoIcons from "views/NucleoIcons.js";
-import LoginPage from "views/examples/LoginPage.js";
+//import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import SignUp from "./views/index-sections/SignUp";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -32,8 +33,8 @@ ReactDOM.render(
           render={(props) => <ProfilePage {...props} />}
         />
         <Route
-          path="/login-page"
-          render={(props) => <LoginPage {...props} />}
+          path="/SignUp-page"
+          render={(props) => <SignUp {...props} />}
         />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />

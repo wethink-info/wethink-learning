@@ -146,18 +146,17 @@ function IndexNavbar() {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <Link to="/login-page" >
+                <NavLink href="/SignUp-page">
                 <Button
                   className="nav-link btn-neutral"
                   color="info"
-                  href="#pablo"
                   id="upgrade-to-pro"
-                  onClick={(e) => e.preventDefault()}
+                  /* onClick={(e) => e.preventDefault()} */
                 >
                   <i className="now-ui-icons  mr-1"></i>
-                  <p>Create your account</p>
-                </Button>
-                </Link>
+                  Create your account
+                </Button> 
+                </NavLink>
                 <UncontrolledTooltip target="#upgrade-to-pro">
                   You are Welcome 
                 </UncontrolledTooltip>

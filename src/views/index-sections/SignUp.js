@@ -26,7 +26,7 @@ function SignUp() {
   return (
     <>
       <div
-        className="section section-signup"
+        className="section "
         style={{
           backgroundImage: "url(" + require("assets/img/bg11.jpg") + ")",
           backgroundSize: "cover",
@@ -146,7 +146,7 @@ function SignUp() {
               size="lg"
               tag={Link}
             >
-              View Login Page
+              Come Back
             </Button>
           </div>
         </Container>
