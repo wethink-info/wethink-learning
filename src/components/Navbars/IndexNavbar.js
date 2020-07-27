@@ -146,6 +146,7 @@ function IndexNavbar() {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
+                <Link to="/login-page" >
                 <Button
                   className="nav-link btn-neutral"
                   color="info"
@@ -156,6 +157,7 @@ function IndexNavbar() {
                   <i className="now-ui-icons  mr-1"></i>
                   <p>Create your account</p>
                 </Button>
+                </Link>
                 <UncontrolledTooltip target="#upgrade-to-pro">
                   You are Welcome 
                 </UncontrolledTooltip>

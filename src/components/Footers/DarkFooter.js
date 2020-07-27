@@ -12,15 +12,15 @@ function DarkFooter() {
           <ul>
             <li>
               <a
-                href="https://www.creative-tim.com?ref=nukr-dark-footer"
+                href="#"
                 target="_blank"
               >
-                Creative Tim
+                E-learning Horizon
               </a>
             </li>
             <li>
               <a
-                href="http://presentation.creative-tim.com?ref=nukr-dark-footer"
+                href="#"
                 target="_blank"
               >
                 About Us
@@ -28,7 +28,7 @@ function DarkFooter() {
             </li>
             <li>
               <a
-                href="http://blog.creative-tim.com?ref=nukr-dark-footer"
+                href=""
                 target="_blank"
               >
                 Blog
@@ -39,17 +39,17 @@ function DarkFooter() {
         <div className="copyright" id="copyright">
           © {new Date().getFullYear()}, Designed by{" "}
           <a
-            href="https://www.invisionapp.com?ref=nukr-dark-footer"
+            href="https://www.horizon-university.tn/"
             target="_blank"
           >
-            Invision
+            Horizon University
           </a>
           . Coded by{" "}
           <a
-            href="https://www.creative-tim.com?ref=nukr-dark-footer"
+            href="https://www.wethink.info/"
             target="_blank"
           >
-            Creative Tim
+            Wethink info
           </a>
           .
         </div>
