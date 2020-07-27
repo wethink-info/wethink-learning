@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FcIdea, FcApproval } from 'react-icons/fc';
 // reactstrap components
 import {
   Card,
@@ -16,10 +16,13 @@ import {
 } from "reactstrap";
 
 // core components
-
+const styleicons = {
+  width : '50px',
+  height: '50px'
+}
 function Tabs() {
   const [iconPills, setIconPills] = React.useState("1");
-  const [pills, setPills] = React.useState("1");
+  //const [pills, setPills] = React.useState("1");
   return (
     <>
       <div className="section section-tabs">
@@ -31,6 +34,7 @@ function Tabs() {
                 <CardHeader>
                   <Nav className="justify-content-center" role="tablist" tabs>
                     <NavItem>
+                    
                       <NavLink
                         className={iconPills === "1" ? "active" : ""}
                         href="#pablo"
@@ -39,7 +43,8 @@ function Tabs() {
                           setIconPills("1");
                         }}
                       >
-                        <i className="now-ui-icons objects_umbrella-13"></i>
+                       <FcIdea style={styleicons}/>
+                        <i className="now-ui-icons "></i>
                         features option
                       </NavLink>
                     </NavItem>
@@ -114,7 +119,8 @@ function Tabs() {
                           setIconPills("1");
                         }}
                       >
-                        <i className="now-ui-icons objects_umbrella-13"></i>
+                        <FcApproval style={styleicons}/>
+                        <i className="now-ui-icons"></i>
                         features option
                       </NavLink>
                     </NavItem>
