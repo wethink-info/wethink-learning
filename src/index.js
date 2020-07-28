@@ -17,6 +17,8 @@ import AboutUs from "./views/index-sections/AboutUs.js";
 import Services from "./views/index-sections/Services";
 import OurOffers from "./views/index-sections/Our Offers";
 import IndexNavbar from "./components/Navbars/IndexNavbar.js";
+import ContatctUs from "views/index-sections/ContatctUs";
+
 ReactDOM.render(
   <BrowserRouter>
    <IndexNavbar/>
@@ -50,6 +52,10 @@ ReactDOM.render(
           <Route
            path="/AboutUs-page"
            render={(props) => <AboutUs {...props} />}
+        />
+        <Route
+           path="/ContactUs-page"
+           render={(props) => <ContatctUs {...props} />}
         />
           <Redirect to="/index" />
         <Redirect from="/" to="/index" />
