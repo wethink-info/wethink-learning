@@ -115,7 +115,7 @@ function IndexNavbar() {
                     All components
                   </DropdownItem>
                   <DropdownItem>
-                  <NavLink href="/Service-page">
+                  <NavLink href="/Services-page">
                     <i className="now-ui-icons business_briefcase-24 mr-1"></i>
                     Services
                     </NavLink>
