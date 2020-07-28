@@ -116,27 +116,31 @@ function IndexNavbar() {
                   </DropdownItem>
                   <DropdownItem
                     href="#"
+                    target="_blank"
                   >
                     <i className="now-ui-icons business_briefcase-24 mr-1"></i>
                     Services
                   </DropdownItem>
-                  <DropdownItem>
-                                  
+                  <DropdownItem
+                    href="#"
+                    target="_blank"
+                  >
                     <i className="now-ui-icons objects_spaceship mr-1"></i>
                     Our Offers
                   </DropdownItem>
-                  <DropdownItem>
-                    <NavLink href="/Academy-page">
+                  <DropdownItem
+                    href="#"
+                    target="_blank"
+                  >
                     <i className="now-ui-icons education_hat mr-1"></i>
                    Academy
-                   </NavLink>
                   </DropdownItem>
                   <DropdownItem
+                    href="#"
+                    target="_blank"
                   >
-                    <NavLink href="AboutUs-page">
                     <i className="now-ui-icons travel_info mr-1"></i>
                    About Us
-                   </NavLink>
                   </DropdownItem>
 
                   <DropdownItem >
