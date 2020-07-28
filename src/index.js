@@ -16,6 +16,8 @@ import ProfilePage from "views/examples/ProfilePage.js";
 import SignUp from "./views/index-sections/SignUp";
 import AboutUs from "./views/index-sections/AboutUs.js";
 import IndexNavbar from "./components/Navbars/IndexNavbar.js";
+import ContactUs from "./views/index-sections/ContatctUs.js";
+
 ReactDOM.render(
   <BrowserRouter>
    <IndexNavbar/>
@@ -42,6 +44,10 @@ ReactDOM.render(
         <Route 
           path="/AboutUs-page"
           render={(props) => <AboutUs {...props} />}
+        />
+        <Route 
+          path="/ContactUs-page"
+          render={(props) => <ContactUs {...props} />}
         />
 
         <Redirect to="/index" />
