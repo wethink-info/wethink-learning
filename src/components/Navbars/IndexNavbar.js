@@ -58,11 +58,11 @@ function IndexNavbar() {
               target="_blank"
               id="navbar-brand"
             >
-              E-learning Horizon
+              WeThink Learning
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-              Horizon University<br/>
-              e-learning plateforme
+            E-learning platform<br/>
+              By WeThink info
             </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
@@ -107,7 +107,7 @@ function IndexNavbar() {
                   onClick={(e) => e.preventDefault()}
                 >
                   <i className="now-ui-icons design_app mr-1"></i>
-                  <p>plateforme</p>
+                  <p>platform</p>
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem to="/index" tag={Link}>
@@ -117,26 +117,34 @@ function IndexNavbar() {
                   <DropdownItem
                     href="#"
                   >
-                    <i className="now-ui-icons  mr-1"></i>
+                    <i className="now-ui-icons business_briefcase-24 mr-1"></i>
                     Services
                   </DropdownItem>
-                  <DropdownItem
-                    href="#">
-                    <i className="now-ui-icons  mr-1"></i>
+                  <DropdownItem>
+                                  
+                    <i className="now-ui-icons objects_spaceship mr-1"></i>
                     Our Offers
                   </DropdownItem>
-                  <DropdownItem
-                    href="#">
-                    <i className="now-ui-icons  mr-1"></i>
-                   Academy
-                  </DropdownItem>
                   <DropdownItem>
-                    <NavLink href="AboutUs-page">
-                      <i  className="now-ui-icons design_bullet-list-67 mr-1"> </i>
-                      About Us
-                      </NavLink>
+                    <NavLink href="/Academy-page">
+                    <i className="now-ui-icons education_hat mr-1"></i>
+                   Academy
+                   </NavLink>
                   </DropdownItem>
-                  
+                  <DropdownItem
+                  >
+                    <NavLink href="AboutUs-page">
+                    <i className="now-ui-icons travel_info mr-1"></i>
+                   About Us
+                   </NavLink>
+                  </DropdownItem>
+
+                  <DropdownItem >
+                    <NavLink href="/ContactUs-page">
+                      <i className="now-ui-icons ui-1_email-85 mr-1"></i>
+                    Contact WeThink
+                    </NavLink>
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
