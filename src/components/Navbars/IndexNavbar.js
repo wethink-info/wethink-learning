@@ -114,35 +114,30 @@ function IndexNavbar() {
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     All components
                   </DropdownItem>
-                  <DropdownItem
-                    href="#"
-                    target="_blank"
-                  >
+                  <DropdownItem>
+                  <NavLink href="/Service-page">
                     <i className="now-ui-icons business_briefcase-24 mr-1"></i>
                     Services
+                    </NavLink>
                   </DropdownItem>
-                  <DropdownItem
-                    href="#"
-                    target="_blank"
-                  >
+                  <DropdownItem>
+                    <NavLink href="/OurOffers-page">
                     <i className="now-ui-icons objects_spaceship mr-1"></i>
                     Our Offers
+                    </NavLink>
                   </DropdownItem>
-                  <DropdownItem
-                    href="#"
-                    target="_blank"
-                  >
+                  <DropdownItem>
+                  <NavLink href="/Academy-page">
                     <i className="now-ui-icons education_hat mr-1"></i>
                    Academy
+                   </NavLink>
                   </DropdownItem>
-                  <DropdownItem
-                    href="#"
-                    target="_blank"
-                  >
+                  <DropdownItem>
+                  <NavLink href="/AboutUs-page">
                     <i className="now-ui-icons travel_info mr-1"></i>
                    About Us
+                   </NavLink>
                   </DropdownItem>
-
                   <DropdownItem >
                     <NavLink href="/ContactUs-page">
                       <i className="now-ui-icons ui-1_email-85 mr-1"></i>

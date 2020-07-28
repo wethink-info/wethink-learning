@@ -41,16 +41,19 @@ ReactDOM.render(
           path="/SignUp-page"
           render={(props) => <SignUp {...props} />}
         />
-        <Route 
-          path="/AboutUs-page"
-          render={(props) => <AboutUs {...props} />}
+        <Route
+           path="/Services-page"
+           render={(props) => <Services {...props} />}
         />
-        <Route 
-          path="/ContactUs-page"
-          render={(props) => <ContactUs {...props} />}
+          <Route
+           path="/OurOffers-page"
+           render={(props) => <OurOffers {...props} />}
         />
-
-        <Redirect to="/index" />
+          <Route
+           path="/Services-page"
+           render={(props) => <Services {...props} />}
+        />
+          <Redirect to="/index" />
         <Redirect from="/" to="/index" />
       </Switch>
     </Switch>
