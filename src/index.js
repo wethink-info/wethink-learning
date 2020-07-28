@@ -14,6 +14,8 @@ import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import SignUp from "./views/index-sections/SignUp";
 import AboutUs from "./views/index-sections/AboutUs.js";
+import Services from "./views/index-sections/Services";
+import OurOffers from "./views/index-sections/Our Offers";
 import IndexNavbar from "./components/Navbars/IndexNavbar.js";
 ReactDOM.render(
   <BrowserRouter>
@@ -46,8 +48,8 @@ ReactDOM.render(
            render={(props) => <OurOffers {...props} />}
         />
           <Route
-           path="/Services-page"
-           render={(props) => <Services {...props} />}
+           path="/AboutUs-page"
+           render={(props) => <AboutUs {...props} />}
         />
           <Redirect to="/index" />
         <Redirect from="/" to="/index" />
