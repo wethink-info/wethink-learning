@@ -17,11 +17,7 @@ import AboutUs from "./views/index-sections/AboutUs.js";
 import Services from "./views/index-sections/Services";
 import OurOffers from "./views/index-sections/Our Offers";
 import IndexNavbar from "./components/Navbars/IndexNavbar.js";
-<<<<<<< HEAD
-import ContactUs from "./views/index-sections/ContatctUs.js";
-=======
 import ContatctUs from "views/index-sections/ContatctUs";
->>>>>>> amer_branch
 
 ReactDOM.render(
   <BrowserRouter>
