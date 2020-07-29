@@ -17,7 +17,10 @@ import AboutUs from "./views/index-sections/AboutUs.js";
 import Services from "./views/index-sections/Services";
 import OurOffers from "./views/index-sections/Our Offers";
 import IndexNavbar from "./components/Navbars/IndexNavbar.js";
+import Blog from "./views/index-sections/Blog.js";
+import DarkFooter from "components/Footers/DarkFooter";
 import ContatctUs from "views/index-sections/ContatctUs";
+import Academy from "views/index-sections/Academy/Academy";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -49,11 +52,19 @@ ReactDOM.render(
            path="/OurOffers-page"
            render={(props) => <OurOffers {...props} />}
         />
+        <Route
+           path="/Academy-page"
+           render={(props) => <Academy {...props} />}
+        />
           <Route
            path="/AboutUs-page"
            render={(props) => <AboutUs {...props} />}
         />
         <Route
+           path="/Blog-page"
+           render={(props) => <Blog {...props} />}
+          />
+          <Route
            path="/ContactUs-page"
            render={(props) => <ContatctUs {...props} />}
         />
@@ -61,6 +72,7 @@ ReactDOM.render(
         <Redirect from="/" to="/index" />
       </Switch>
     </Switch>
+    <DarkFooter />
   </BrowserRouter>,
   document.getElementById("root")
 );

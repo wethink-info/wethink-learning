@@ -2,7 +2,10 @@
 import React from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import {
+  Container,
+  NavLink,
+ } from "reactstrap";
 
 function DarkFooter() {
   return (
@@ -11,28 +14,25 @@ function DarkFooter() {
         <nav>
           <ul>
             <li>
-              <a
-                href="#"
-                target="_blank"
-              >
-                E-learning Horizon
+            <NavLink href="/index">
+              <a>
+                Wethink learning                
               </a>
+            </NavLink>
             </li>
             <li>
-              <a
-                href="#"
-                target="_blank"
-              >
+            <NavLink href="/AboutUs-page">
+              <a>
                 About Us
               </a>
+            </NavLink>
             </li>
             <li>
-              <a
-                href=""
-                target="_blank"
-              >
-                Blog
+            <NavLink href="/Blog-page">
+              <a>
+                  Blog              
               </a>
+            </NavLink>
             </li>
           </ul>
         </nav>
@@ -42,14 +42,14 @@ function DarkFooter() {
             href="https://www.horizon-university.tn/"
             target="_blank"
           >
-            Horizon University
+            E-Learning platform
           </a>
           . Coded by{" "}
           <a
             href="https://www.wethink.info/"
             target="_blank"
           >
-            Wethink info
+            Wethink-info
           </a>
           .
         </div>
