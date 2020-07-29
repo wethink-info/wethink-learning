@@ -65,7 +65,6 @@ function Index() {
           <Examples />
           <Download /> */}
         </div>
-        <DarkFooter />
       </div>
     </>
   );

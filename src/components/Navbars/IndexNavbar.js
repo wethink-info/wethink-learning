@@ -138,6 +138,12 @@ function IndexNavbar() {
                    About Us
                    </NavLink>
                   </DropdownItem>
+                  <DropdownItem>
+                  <NavLink href="/Blog-page">
+                    <i className="now-ui-icons travel_info mr-1"></i>
+                   Blog
+                   </NavLink>
+                  </DropdownItem>
                   <DropdownItem >
                     <NavLink href="/ContactUs-page">
                       <i className="now-ui-icons ui-1_email-85 mr-1"></i>

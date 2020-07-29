@@ -18,7 +18,7 @@ function DefaultFooter() {
                   href="https://www.creative-tim.com?ref=nukr-default-footer"
                   target="_blank"
                 >
-                  Creative Tim
+                  E-Learning WETHINK
                 </a>
               </li>
               <li>
@@ -52,7 +52,7 @@ function DefaultFooter() {
               href="https://www.creative-tim.com?ref=nukr-default-footer"
               target="_blank"
             >
-              Creative Tim
+              wethink-info
             </a>
             .
           </div>
