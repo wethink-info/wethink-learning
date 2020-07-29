@@ -147,7 +147,7 @@ function IndexNavbar() {
                   <DropdownItem >
                     <NavLink href="/ContactUs-page">
                       <i className="now-ui-icons ui-1_email-85 mr-1"></i>
-                    Contact WeThink
+                      Contact WeThink
                     </NavLink>
                   </DropdownItem>
                 </DropdownMenu>

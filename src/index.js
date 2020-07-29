@@ -19,6 +19,7 @@ import OurOffers from "./views/index-sections/Our Offers";
 import IndexNavbar from "./components/Navbars/IndexNavbar.js";
 import Blog from "./views/index-sections/Blog.js";
 import DarkFooter from "components/Footers/DarkFooter";
+import ContatctUs from "views/index-sections/ContatctUs";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -57,6 +58,10 @@ ReactDOM.render(
         <Route
            path="/Blog-page"
            render={(props) => <Blog {...props} />}
+          />
+          <Route
+           path="/ContactUs-page"
+           render={(props) => <ContatctUs {...props} />}
         />
           <Redirect to="/index" />
         <Redirect from="/" to="/index" />
