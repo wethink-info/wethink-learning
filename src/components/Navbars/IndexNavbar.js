@@ -54,12 +54,12 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              href="https://horizon-university.tn/"
-              target="_blank"
               id="navbar-brand"
             >
+            <NavLink href="/index">
               WeThink Learning
-            </NavbarBrand>
+            </NavLink>           
+             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
             E-learning platform<br/>
               By WeThink info
@@ -86,7 +86,7 @@ function IndexNavbar() {
             <Nav navbar>
              <NavItem>
                   <NavLink
-                      href="#"
+                      href="/index"
                       /* onClick={(e) => {
                         e.preventDefault();
                         document
@@ -95,7 +95,7 @@ function IndexNavbar() {
                       }} */
                       >
                       <i className="now-ui-icons "></i>
-                      <p>Blog</p>
+                      <p>Home</p>
                   </NavLink>
               </NavItem>
               <UncontrolledDropdown nav>
@@ -147,7 +147,7 @@ function IndexNavbar() {
                   <DropdownItem >
                     <NavLink href="/ContactUs-page">
                       <i className="now-ui-icons ui-1_email-85 mr-1"></i>
-                      Contact WeThink
+                    Contact WeThink
                     </NavLink>
                   </DropdownItem>
                 </DropdownMenu>

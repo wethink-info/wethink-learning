@@ -24,6 +24,12 @@ function AboutUs() {
               We are proud to reflect on the impact that E-Learning WETHINK and our partner institutions
                have had on education and learning since our founding in 2020.
                 </h5>
+              <h2 className="title">Our Story</h2>
+              <h5 className="description">
+                WETHINK platform is the world’s fastest-growing enterprise learning solution, 
+                unifying learning management and prepackaged courses in an innovative 
+                platform to meet any organization’s internal and external training needs.
+              </h5>
                 <img
                   className="img-raised"
                   src={require("assets/img/selective-focus-photo-of-man-using-laptop-1438081.jpg")}
