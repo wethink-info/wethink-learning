@@ -109,7 +109,7 @@ function IndexNavbar() {
                   <i className="now-ui-icons design_app mr-1"></i>
                   <p>platform</p>
                 </DropdownToggle>
-                <DropdownMenu>
+                <DropdownMenu data-background-color="black">
                   <DropdownItem to="/index" tag={Link}>
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     All components
