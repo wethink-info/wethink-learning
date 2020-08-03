@@ -20,7 +20,7 @@ import IndexNavbar from "./components/Navbars/IndexNavbar.js";
 import Blog from "./views/index-sections/Blog.js";
 import DarkFooter from "components/Footers/DarkFooter";
 import ContatctUs from "views/index-sections/ContatctUs";
-import Academy from "views/index-sections/Academy.js";
+import Academy from "views/index-sections/Academy/Academy";
 
 ReactDOM.render(
   <BrowserRouter>

@@ -171,7 +171,7 @@ function IndexNavbar() {
         
                <NavItem>
                 <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
+                  href="#"
                   target="_blank"
                   id="twitter-tooltip"
                 >

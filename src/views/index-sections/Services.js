@@ -24,18 +24,18 @@ function Services () {
     });
   
     return (
-          <div className="page-header" filter-color="blue"
+      <div className="page-header" filter-color="blue"
+      style={{
+        backgroundImage: "url(" + require("assets/img/imgmain.jpg") + ")",
+      }}
+      >
+        <div
+          className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/person-writing-on-notebook-4145190.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/imgmain.jpg") + ")",
           }}
-          >
-            <div
-              className="page-header-image"
-              style={{
-                backgroundImage: "url(" + require("assets/img/person-writing-on-notebook-4145190.jpg") + ")",
-              }}
-              ref={pageHeader}
-            ></div>
+          ref={pageHeader}
+        ></div>
             <Container>
               
                 <img
