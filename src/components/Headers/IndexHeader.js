@@ -40,11 +40,6 @@ function IndexHeader() {
         ></div>
         <Container>
           <div className="content-center brand">
-            <img
-              alt="..."
-              className="n-logo"
-              src={require("assets/img/logo.4ea8f6ce.png")}
-            ></img>
             <h1 className=" indexHeader">E-learning platform</h1>
             <h2 >
                A simpler, more open, and highly interactive learning experience that instructors and learners like

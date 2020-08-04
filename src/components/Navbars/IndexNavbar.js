@@ -16,6 +16,7 @@ import {
   Container,
   UncontrolledTooltip,
 } from "reactstrap";
+import WLearningLogo from '../Logo/logo.jsx';
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -57,7 +58,7 @@ function IndexNavbar() {
               id="navbar-brand"
             >
             <NavLink href="/index">
-              WeThink Learning
+            <WLearningLogo />
             </NavLink>           
              </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
