@@ -8,8 +8,6 @@ import {
  } from "reactstrap";
 // core components
 import '../../components/Headers/indexHeader.css';
-
- import IndexHeader from "components/Headers/IndexHeader";
  
 function Blog () {
 /*     let pageHeader = React.createRef();

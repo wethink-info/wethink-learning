@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
@@ -31,9 +30,11 @@ function AboutUs() {
                 platform to meet any organization’s internal and external training needs.
               </h5>
                 <img
+
                   className="img-raised"
                   src={require("assets/img/selective-focus-photo-of-man-using-laptop-1438081.jpg")}
-                ></img>
+                  alt="img"
+                  ></img>
             </Col>
           </Row>
         </Container>

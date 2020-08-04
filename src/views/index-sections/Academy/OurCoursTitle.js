@@ -8,8 +8,8 @@ const OurCoursTitle = (props) => {
         <Container fluid>
           <h1 className="display-3 text-center">Our Successful Courses</h1>
           <p className="lead text-center">
-          All courses are certified by Wethink Learning,
-          as well as by the Expert Trainer who provides online training.
+          All courses are certified by Wethink Learning,<br/>
+          as well as by the Expert Trainer who provides online training
           </p>
         </Container>
       </Jumbotron>

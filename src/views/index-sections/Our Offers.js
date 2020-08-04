@@ -4,8 +4,6 @@ import React from "react";
 import { Container } from "reactstrap";
 // core components
 
-import IndexHeader from "components/Headers/IndexHeader";
-
 function OurOffers () {
     let pageHeader = React.createRef();
 

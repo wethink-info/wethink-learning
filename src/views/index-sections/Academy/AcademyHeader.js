@@ -4,9 +4,7 @@ import React from "react";
 // reactstrap components
 import { 
   Container,
-  Col,
-  Row,
- } from "reactstrap";
+  } from "reactstrap";
 // core components
 import '../../../components/Headers/indexHeader.css';
 import './Academy.css';
@@ -53,12 +51,10 @@ return (
             <h3>
             To provide you with world-class educational experiences
             </h3>
-            </header>
-           
-          
+            </header> 
         </Container>
       </div>
     </>
   );
-        }
-        export default Academy;
+}
+export default Academy;
