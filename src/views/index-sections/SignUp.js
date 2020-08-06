@@ -133,22 +133,23 @@ function SignUp() {
                   >
                     Get Started
                   </Button>
+                   <div className="col text-center">
+                        <Button
+                          className="btn-round btn-white"
+                          color="default"
+                          to="#"
+                          outline
+                          size="lg"
+                          tag={Link}
+                        >
+                          Switch to Sign IN
+                        </Button>
+                    </div>
                 </CardFooter>
               </Form>
             </Card>
           </Row>
-          <div className="col text-center">
-            <Button
-              className="btn-round btn-white"
-              color="default"
-              to="/login-page"
-              outline
-              size="lg"
-              tag={Link}
-            >
-              Come Back
-            </Button>
-          </div>
+          
         </Container>
       </div>
     </>

@@ -3,6 +3,8 @@
   "version": "1.4.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "axios": "^0.19.2",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
     "moment": "2.26.0",
@@ -13,10 +15,12 @@
     "react-datetime": "2.16.3",
     "react-dom": "16.13.1",
     "react-icons": "^3.10.0",
+    "react-redux": "^7.2.1",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.1",
-    "reactstrap": "8.4.1"
+    "reactstrap": "8.4.1",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
