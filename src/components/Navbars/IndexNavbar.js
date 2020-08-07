@@ -154,7 +154,7 @@ function IndexNavbar() {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink href="/SignUp-page">
+                <NavLink href="/Auth-page">
                 <Button
                   className="nav-link btn-neutral"
                   color="info"
