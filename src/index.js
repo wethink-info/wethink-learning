@@ -1,19 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-
-// setup redux
 import App from "App";
+import "../src/assets/css/index.css";
+// SETTING UP REDUX STORE
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware, combineReducers } from 'redux';
-import thunk from 'redux-thunk';
-import authReducer from './store/reducers/auth';
+import { createStore, applyMiddleware, compose  } from 'redux';
+import reduxThunk from "redux-thunk";
+import reducers from "./store/reducers/index.js";
 
-const rootReducer = combineReducers({
-  auth: authReducer 
-});
+// ENHANCING STORE WITH FIREBASE
+import { reactReduxFirebase } from "react-redux-firebase";
+import firebase from "./services/firebase";
 
-const store = createStore(rootReducer, applyMiddleware(thunk));
+const createStoreWithFirebase = compose(reactReduxFirebase(firebase))(
+  createStore
+);
+const store = createStoreWithFirebase(
+  reducers,
+  {},
+  applyMiddleware(reduxThunk)
+);
+
 const app = (
   <Provider store={store}>
     <BrowserRouter>

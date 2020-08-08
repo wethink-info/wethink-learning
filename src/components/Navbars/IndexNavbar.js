@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { compose } from "redux";
+import { connect } from "react-redux";
+import { signout } from "../../store/actions/auth";
+import requireAuth from "../hoc/requireAuth";
 // reactstrap components
 import {
   Button,
@@ -154,16 +158,19 @@ function IndexNavbar() {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink href="/Auth-page">
+                <NavLink href="/login">
                 <Button
-                  className="nav-link btn-neutral"
+                  className="btn-switch"
                   color="info"
                   id="upgrade-to-pro"
                   /* onClick={(e) => e.preventDefault()} */
                 >
                   <i className="now-ui-icons  mr-1"></i>
-                  Create your account
+                  Sign IN
                 </Button> 
+                <Button className="btn-switch" onClick={() => signout()}>
+                  Log out
+                </Button>
                 </NavLink>
                 <UncontrolledTooltip target="#upgrade-to-pro">
                   You are Welcome 
@@ -217,4 +224,24 @@ function IndexNavbar() {
   );
 }
 
-export default IndexNavbar;
+//export default IndexNavbar;
+
+function mapStateToProps(state) {
+  return {
+    auth: state.firebaseReducer.auth
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    signout: () => dispatch(signout())
+  };
+}
+
+export default compose(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  ),
+  requireAuth
+)(IndexNavbar);
