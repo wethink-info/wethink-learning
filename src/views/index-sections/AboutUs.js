@@ -1,11 +1,12 @@
 import React from "react";
+import requireAuth from "../../components/hoc/requireAuth";
 
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
 
 // core components
 
-function AboutUs() {
+const AboutUs = () => {
   return (
     <>
       <div className="section">
@@ -44,4 +45,4 @@ function AboutUs() {
   );
 }
 
-export default  AboutUs;
+export default requireAuth(AboutUs);
