@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from "reactstrap";
+import requireAuth from 'components/hoc/requireAuth';
 
-export default function ContactUs() {
+function ContactUs() {
     return (
 
         <>
@@ -25,3 +26,4 @@ export default function ContactUs() {
         </>
     )
 }
+export default requireAuth(ContactUs);
