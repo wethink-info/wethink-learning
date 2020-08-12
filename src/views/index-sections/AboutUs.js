@@ -1,5 +1,4 @@
 import React from "react";
-import requireAuth from "../../components/hoc/requireAuth";
 
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
@@ -45,4 +44,4 @@ const AboutUs = () => {
   );
 }
 
-export default requireAuth(AboutUs);
+export default AboutUs;

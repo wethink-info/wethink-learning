@@ -115,9 +115,9 @@ function IndexNavbar() {
                   <p>platform</p>
                 </DropdownToggle>
                 <DropdownMenu data-background-color="black">
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to="/Contacts-page" tag={Link}>
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    All components
+                    Contacts
                   </DropdownItem>
                   <DropdownItem>
                   <NavLink href="/Services-page">
