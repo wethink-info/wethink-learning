@@ -15,23 +15,23 @@ function DarkFooter() {
           <ul>
             <li>
             <NavLink href="/index">
-              <a>
+              
                 Wethink learning                
-              </a>
+              
             </NavLink>
             </li>
             <li>
             <NavLink href="/AboutUs-page">
-              <a>
+              
                 About Us
-              </a>
+              
             </NavLink>
             </li>
             <li>
             <NavLink href="/Blog-page">
-              <a>
+              
                   Blog              
-              </a>
+              
             </NavLink>
             </li>
           </ul>

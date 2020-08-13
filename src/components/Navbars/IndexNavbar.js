@@ -1,9 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { compose } from "redux";
 import { connect } from "react-redux";
 import { signout } from "../../store/actions/auth";
-import requireAuth from "../hoc/requireAuth";
 // reactstrap components
 import {
   Button,
@@ -22,7 +20,7 @@ import {
 } from "reactstrap";
 import WLearningLogo from '../Logo/logo.jsx';
 
-function IndexNavbar() {
+const IndexNavbar = ({ signout }) => {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
@@ -61,7 +59,7 @@ function IndexNavbar() {
             <NavbarBrand
               id="navbar-brand"
             >
-            <NavLink href="/index">
+            <NavLink href="/home">
             <WLearningLogo />
             </NavLink>           
              </NavbarBrand>
@@ -91,7 +89,7 @@ function IndexNavbar() {
             <Nav navbar>
              <NavItem>
                   <NavLink
-                      href="/index"
+                      href="/home"
                       /* onClick={(e) => {
                         e.preventDefault();
                         document
@@ -115,9 +113,13 @@ function IndexNavbar() {
                   <p>platform</p>
                 </DropdownToggle>
                 <DropdownMenu data-background-color="black">
-                  <DropdownItem to="/Contacts-page" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
+                  <DropdownItem>
+                    
+                    <NavLink href="/Contacts-page">
+                    <i className="now-ui-icons files_box mr-1"></i>
                     Contacts
+                    </NavLink>
+                    
                   </DropdownItem>
                   <DropdownItem>
                   <NavLink href="/Services-page">
@@ -163,7 +165,6 @@ function IndexNavbar() {
                   className="btn-switch"
                   color="info"
                   id="upgrade-to-pro"
-                  /* onClick={(e) => e.preventDefault()} */
                 >
                   <i className="now-ui-icons  mr-1"></i>
                   Sign IN
@@ -192,7 +193,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/Horizon-University-108858063955865/"
+                  href="https://www.facebook.com/GlobalService5"
                   target="_blank"
                   id="facebook-tooltip"
                 >
@@ -203,19 +204,6 @@ function IndexNavbar() {
                   Like us on Facebook
                 </UncontrolledTooltip>
               </NavItem>
-             {/*  <NavItem>
-                <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                  target="_blank"
-                  id="instagram-tooltip"
-                >
-                  <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
-                </NavLink>
-                <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
-                </UncontrolledTooltip>
-              </NavItem> */}
             </Nav>
           </Collapse>
         </Container>
@@ -223,8 +211,6 @@ function IndexNavbar() {
     </>
   );
 }
-
-//export default IndexNavbar;
 
 function mapStateToProps(state) {
   return {
@@ -242,6 +228,5 @@ export default compose(
   connect(
     mapStateToProps,
     mapDispatchToProps
-  ),
-  requireAuth
+  )
 )(IndexNavbar);
