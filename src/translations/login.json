@@ -1,0 +1,32 @@
+{
+  "login": {
+    "login": [
+      "Signin",
+      "Identifiez-vous"
+    ],
+    "signup": [
+      "Signup",
+      "Enregistrez-vous"
+    ],
+    "textLogin": [
+      "Please Signin using account detail bellow",
+      "Veuillez vous connecter en utilisant les détails du compte ci-dessous"
+    ],
+    "textSignup": [
+      "Please Signup using account detail bellow",
+      "Veuillez vous enregistrer en utilisant les détails du compte ci-dessous"
+    ],
+    "switchSignup": [
+      "Switch to Signup",
+      "Passer á l'inscription"
+    ],
+    "switchSignin": [
+      "Switch to Signin",
+      "Passer á l'identification"
+    ],
+    "pwd": [
+      "Password",
+      "Mot de Passe"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "aboutUs": {
+    "title": [
+      "About The University",
+      "L'Université"
+    ],
+    "p1": [
+      "At Horizon University, we value academic excellence with strong moral values ​​and the pursuit of knowledge.",
+      "A l’Université Horizon, nous valorisons l'excellence académique tout en développant  nos valeurs d’éthique et de partage et tout en s’adaptant au profil de l’étudiant."
+    ],
+    "p2": [
+      "Horizon University is founded by experienced and recognized academics and industrials who have led numerous large-scale projects in higher education, scientific research and industry in Tunisia, Europe, the Middle East and North America. These founders are surrounded by partners, academics and industrial partners, and IT companies.",
+      "L'université Horizon est fondée par des universitaires et des industriels expérimentés et reconnus à l’échelle internationale. Les fondateurs ont déjà  conduit de nombreux projets d’envergure dans l’enseignement supérieur, la recherche scientifique et dans l’industrie dans divers pays (en en Tunisie, en Europe, au Moyen Orient et en Amérique du Nord). De plus, l’Université Horizon est soutenue par des partenaires universitaires locaux ainsi que des entreprises spécialisées en TIC qui participent dans les formations et dans les programmes de co-construction et d’alternance."
+    ],
+    "join": [
+      "Join Us",
+      "Nous Rejoindre"
+    ],
+    "more": [
+      "Play more videos about us",
+      "Autres vidéos sur nous"
+    ],
+    "visionText": [
+      "An international forum for transforming higher education towards creativity and innovation in cutting-edge digital systems.",
+      "Forum international avant-gardiste mettant la créativité et l'innovation au centre de la formation du numérique."
+    ],
+    "missionText": [
+      "To create a transformative educational experience focused on cutting-edge technology, innovation, communication and interpersonal skills.",
+      "Offrir une formation de pointe dans le domaine du numérique promouvant l’innovation, la communication et les relations interpersonnelles."
+    ]
+  }
+}

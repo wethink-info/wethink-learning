@@ -1,0 +1,72 @@
+{
+  "contact": {
+    "address": [
+      "Address",
+      "Adresse"
+    ],
+    "phone": [
+      "Phone",
+      "Téléphone"
+    ],
+    "time": [
+      "Contact Time",
+      "Horaire de Contact"
+    ],
+    "email": [
+      "Email",
+      "Email"
+    ],
+    "add": [
+      "Sousse, Tunisia",
+      "Sousse, Tunisie"
+    ],
+    "title": [
+      "Contact Us",
+      "Nous Contacter"
+    ],
+    "lastName": [
+      "Last Name",
+      "Nom"
+    ],
+    "firstName": [
+      "First Name",
+      "Prénom"
+    ],
+    "message": [
+      "Message",
+      "Message"
+    ],
+    "failure": [
+      "Something went wrong, please retry later or send an email to contact@horizon-university.tn",
+      "Un problème est parvenu, veuillez réessayer plus tard ou envoyer un email à contact@horizon-university.tn"
+    ],
+    "success": [
+      "Your message was  sent successfully, we will contact you soon.",
+      "Votre message a été soumis avec succès. Nous vous contacterons sous peu."
+    ],
+    "msgldevops": [
+      "Masters in Software Engineering & DevOps",
+      "Mastère en Ingénierie Logicielle et DevOps"
+    ],
+    "msdevopssre": [
+      "Masters in DevOps & SRE",
+      "Mastère en Ingénierie DevOps et Site Reliability"
+    ],
+    "msbdds": [
+      "Masters in Big Data & Data Science",
+      "Mastère en Big Data et Data Science"
+    ],
+    "lsglsi": [
+      "Bachelor in Software Engineering and Information Systems",
+      "Licence en Génie Logiciel et Système d’Information"
+    ],
+    "submit": [
+      "Submit",
+      "Valider"
+    ],
+    "clear": [
+      "Reset",
+      "Effacer"
+    ]
+  }
+}

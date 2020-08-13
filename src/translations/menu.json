@@ -1,0 +1,44 @@
+{
+  "menu": {
+    "welcome": [
+      "Welcome to  your university!",
+      "Bienvenue dans votre université"
+    ],
+    "myspace": [
+      "My Space",
+      "Mon Espace"
+    ],
+    "jobs": [
+      "Jobs",
+      "Recrutement"
+    ],
+    "language": [
+      "Language",
+      "Langue"
+    ],
+    "social": [
+      "Social Media",
+      "Réseaux Sociaux"
+    ],
+    "videos": [
+      "Videos",
+      "Vidéos"
+    ],
+    "contact": [
+      "Contact Us",
+      "Nous Contacter"
+    ],
+    "join": [
+      "Join Us",
+      "Nous Rejoindre"
+    ],
+    "login": [
+      "Login",
+      "Identifiez-Vous"
+    ],
+    "logout": [
+      "Logout",
+      "Déconnectez-Vous"
+    ]
+  }
+}
