@@ -20,6 +20,8 @@ import Tabs from "./index-sections/Tabs.js";
 import Carousel from "./index-sections/Carousel.js";
 import NucleoIcons from "./index-sections/NucleoIcons.js";
 import CompleteExamples from "./index-sections/CompleteExamples.js";
+import Partners from "components/Partners/Partners.js";
+import Testimonials from "components/Testimonials/Testimonials.js";
 //import SignUp from "./index-sections/SignUp.js";
 //import Examples from "./index-sections/Examples.js";
 //import Download from "./index-sections/Download.js";
@@ -45,6 +47,8 @@ function Index() {
           {/* <Images /> */}
           <CompleteExamples />
           <Tabs />
+          <Partners/>
+          <Testimonials/>
           <Carousel />
           <NucleoIcons />
          {/*  <SignUp />

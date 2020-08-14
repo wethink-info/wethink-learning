@@ -11,12 +11,10 @@ function NucleoIcons() {
         <Container>
           <Row>
             <Col lg="6" md="12">
-              <h2 className="title">Nucleo Icons</h2>
+              <h2 className="title">WeThink Learning</h2>
               <h5 className="description">
-                Now UI Kit comes with 100 custom icons made by our friends from
-                NucleoApp. The official package contains over 2.100 thin icons
-                which are looking great in combination with Now UI Kit PRO Make
-                sure you check all of them and use those that you like the most.
+              Build with WeThink Learning an attractive, social and highly interactive online school.
+              Create online courses and host webinars. Easy and immediate implementation.
               </h5>
               <Button
                 className="btn-round mr-1"
@@ -25,17 +23,17 @@ function NucleoIcons() {
                 size="lg"
                 target="_blank"
               >
-                View Demo Icons
+                View Demo
               </Button>
               <Button
                 className="btn-round"
                 color="info"
-                href="https://nucleoapp.com/?ref=1712"
+                href="#"
                 outline
                 size="lg"
                 target="_blank"
               >
-                View All Icons
+                View More
               </Button>
             </Col>
             <Col lg="6" md="12">
