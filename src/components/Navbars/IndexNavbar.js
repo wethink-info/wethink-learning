@@ -145,16 +145,16 @@ const IndexNavbar = ({ signout }) => {
                    About Us
                    </NavLink>
                   </DropdownItem>
-                  <DropdownItem>
+                  {/* <DropdownItem>
                   <NavLink href="/Blog-page">
                     <i className="now-ui-icons travel_info mr-1"></i>
                    Blog
                    </NavLink>
-                  </DropdownItem>
+                  </DropdownItem> */}
                   <DropdownItem >
                     <NavLink href="/ContactUs-page">
                       <i className="now-ui-icons ui-1_email-85 mr-1"></i>
-                    Contact WeThink
+                    Contact Us
                     </NavLink>
                   </DropdownItem>
                 </DropdownMenu>
@@ -178,19 +178,18 @@ const IndexNavbar = ({ signout }) => {
                 </UncontrolledTooltip>
               </NavItem>
         
-               <NavItem>
+              <NavItem>
                 <NavLink
                   href="#"
                   target="_blank"
                   id="twitter-tooltip"
                 >
-                  <i className="fab fa-twitter"></i>
-                  <p className="d-lg-none d-xl-none">Twitter</p>
+                  <i className="now-ui-icons business_globe mr-1"></i>
                 </NavLink>
                 <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow us on Twitter
+                  Select language
                 </UncontrolledTooltip>
-              </NavItem>
+              </NavItem> 
               <NavItem>
                 <NavLink
                   href="https://www.facebook.com/GlobalService5"

@@ -12,7 +12,7 @@ import AboutUs from "./views/index-sections/AboutUs.js";
 import Services from "./views/index-sections/Services";
 import OurOffers from "./views/index-sections/Our Offers";
 import IndexNavbar from "./components/Navbars/IndexNavbar.js";
-import Blog from "./views/index-sections/Blog.js";
+//import Blog from "./views/index-sections/Blog.js";
 import DarkFooter from "components/Footers/DarkFooter";
 //import ContatctUs from "views/index-sections/ContatctUs";
 import Academy from "views/index-sections/Academy/Academy";
@@ -49,10 +49,10 @@ const App = () =>  {
                     path="/AboutUs-page"
                     render={(props) => <AboutUs {...props} />}
                     />
-                    <Route exact
+                    {/* <Route exact
                     path="/Blog-page"
                     render={(props) => <Blog {...props} />}
-                    />
+                    /> */}
                     <Route exact
                     path="/ContactUs-page"
                     render={(props) => <ContatctUs {...props} />}

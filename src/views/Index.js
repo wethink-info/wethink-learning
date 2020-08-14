@@ -45,7 +45,6 @@ function Index() {
           {/* <Images /> */}
           <CompleteExamples />
           <Tabs />
-          <Tabs />
           <Carousel />
           <NucleoIcons />
          {/*  <SignUp />

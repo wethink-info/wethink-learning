@@ -27,31 +27,26 @@ function DarkFooter() {
               
             </NavLink>
             </li>
-            <li>
-            <NavLink href="/Blog-page">
-              
-                  Blog              
-              
-            </NavLink>
-            </li>
+            
           </ul>
         </nav>
         <div className="copyright" id="copyright">
-          © {new Date().getFullYear()}, Designed by{" "}
+          © {new Date().getFullYear()},
+          
+           {/* Designed by{" "}
           <a
             href="https://www.horizon-university.tn/"
             target="_blank"
           >
             E-Learning platform
           </a>
-          . Coded by{" "}
+          . Coded by{" "} */}
           <a
             href="https://www.wethink.info/"
             target="_blank"
           >
-            Wethink-info
+             WeThink.info
           </a>
-          .
         </div>
       </Container>
     </footer>

@@ -40,9 +40,9 @@ function IndexHeader() {
         ></div>
         <Container>
           <div className="content-center brand">
-            <h1 className=" indexHeader">E-learning platform</h1>
+            <h1 className=" indexHeader">WeThink Learning Platform</h1>
             <h2 >
-               A simpler, more open, and highly interactive learning experience that instructors and learners like
+            A simple, open and highly interactive learning experience that instructors and learners like
              </h2>
           </div>
           
