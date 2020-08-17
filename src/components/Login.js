@@ -43,7 +43,7 @@ const Login = ({
   }
 
   return (
-    <div class="row justify-content-center align-items-center" style={mt_form}>
+    <div className="row justify-content-center align-items-center" style={mt_form}>
     <div className="login" >
       <h2>
         {reset ? "Reset password" : newUser ? "Create an account" : "Sign in"}

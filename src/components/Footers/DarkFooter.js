@@ -9,7 +9,7 @@ import {
 
 function DarkFooter() {
   return (
-    <footer className="footer" data-background-color="black">
+    <footer className="footer" data-background-color="black" fixed="bottom" >
       <Container>
         <nav>
           <ul>

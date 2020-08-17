@@ -2,6 +2,7 @@ import React from "react";
 import { compose } from "redux";
 import { connect } from "react-redux";
 import { signout } from "../../store/actions/auth";
+import './IndexNavbar.css';
 // reactstrap components
 import {
   Button,
@@ -149,13 +150,12 @@ const IndexNavbar = ({ signout, auth }) => {
               </UncontrolledDropdown>
               <NavItem>
               {auth.isEmpty ?
-                <NavLink href="/login">
+                <NavLink href="/login" >
                   <Button
-                    className="btn-switch"
+                    className="btn-switch btn-auth"
                     color="info"
                     id="upgrade-to-pro"
                   >
-                    <i className="now-ui-icons  mr-1"></i>
                     Sign IN
                   </Button>
                 </NavLink> 
@@ -166,14 +166,13 @@ const IndexNavbar = ({ signout, auth }) => {
               </NavItem>
               <NavItem>
                 {!auth.isEmpty ? 
-                  <NavLink href="/logout">
+                  <NavLink href="/logout" >
                     <Button
-                        className="btn-switch"
+                        className="btn-switch btn-auth"
                         color="info"
                         id="upgrade-to-pro"
                         onClick={() => signout()}
                       >
-                        <i className="now-ui-icons  mr-1"></i>
                         Log Out
                     </Button>
                   </NavLink> 

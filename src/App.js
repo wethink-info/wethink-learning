@@ -14,7 +14,6 @@ import AboutUs from "./views/index-sections/AboutUs.js";
 import Services from "./views/index-sections/Services";
 import OurOffers from "./views/index-sections/Our Offers";
 import IndexNavbar from "./components/Navbars/IndexNavbar.js";
-//import Blog from "./views/index-sections/Blog.js";
 import DarkFooter from "components/Footers/DarkFooter";
 import Academy from "views/index-sections/Academy/Academy";
 import Login from 'components/Login';

@@ -7,6 +7,7 @@ import "../src/assets/css/index.css";
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose  } from 'redux';
 import reduxThunk from "redux-thunk";
+import logger from "redux-logger";
 import reducers from "./store/reducers/index.js";
 
 // ENHANCING STORE WITH FIREBASE
@@ -19,7 +20,7 @@ const createStoreWithFirebase = compose(reactReduxFirebase(firebase))(
 const store = createStoreWithFirebase(
   reducers,
   {},
-  applyMiddleware(reduxThunk)
+  applyMiddleware(reduxThunk, logger)
 );
 
 const app = (
