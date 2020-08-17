@@ -26,7 +26,7 @@ import Testimonials from "components/Testimonials/Testimonials.js";
 //import Examples from "./index-sections/Examples.js";
 //import Download from "./index-sections/Download.js";
 
-function Index() {
+function Home() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
@@ -72,4 +72,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Home;

@@ -12,7 +12,7 @@ function CompleteExamples() {
         <Container className="text-center">
           <Row className="justify-content-md-center">
             <Col lg="8" md="12">
-              <h2 className="title">Why WeThink Learning Platform </h2>
+              <h2 className="title" style={{ color:'blue'}}>Why WeThink Learning Platform </h2>
               <h5 className="description">
                Aliquip ea proident ex exercitation eu minim. Anim tempor Lorem cillum dolore est irure eu consectetur.
               Voluptate laboris veniam non ipsum esse laboris id aliqua.Fugiat id excepteur occaecat proident pariatur.

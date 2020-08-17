@@ -20,7 +20,7 @@ import {
 } from "reactstrap";
 import WLearningLogo from '../Logo/logo.jsx';
 
-const IndexNavbar = ({ signout }) => {
+const IndexNavbar = ({ signout, auth }) => {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
@@ -90,12 +90,6 @@ const IndexNavbar = ({ signout }) => {
              <NavItem>
                   <NavLink
                       href="/home"
-                      /* onClick={(e) => {
-                        e.preventDefault();
-                        document
-                          .getElementById("download-section")
-                          .scrollIntoView();
-                      }} */
                       >
                       <i className="now-ui-icons "></i>
                       <p>Home</p>
@@ -112,15 +106,15 @@ const IndexNavbar = ({ signout }) => {
                   <i className="now-ui-icons design_app mr-1"></i>
                   <p>platform</p>
                 </DropdownToggle>
-                <DropdownMenu data-background-color="black">
-                  <DropdownItem>
-                    
-                    <NavLink href="/Contacts-page">
-                    <i className="now-ui-icons files_box mr-1"></i>
-                    Contacts
-                    </NavLink>
-                    
-                  </DropdownItem>
+                <DropdownMenu data-background-color="black"> 
+                    {!auth.isEmpty ?  // isEmpty means is Not Authenticated
+                      <DropdownItem>
+                      <NavLink href="/Contacts-page">
+                      <i className="now-ui-icons files_box mr-1"></i>
+                      Contacts
+                      </NavLink>
+                      </DropdownItem> 
+                    :null }
                   <DropdownItem>
                   <NavLink href="/Services-page">
                     <i className="now-ui-icons business_briefcase-24 mr-1"></i>
@@ -145,12 +139,6 @@ const IndexNavbar = ({ signout }) => {
                    About Us
                    </NavLink>
                   </DropdownItem>
-                  {/* <DropdownItem>
-                  <NavLink href="/Blog-page">
-                    <i className="now-ui-icons travel_info mr-1"></i>
-                   Blog
-                   </NavLink>
-                  </DropdownItem> */}
                   <DropdownItem >
                     <NavLink href="/ContactUs-page">
                       <i className="now-ui-icons ui-1_email-85 mr-1"></i>
@@ -160,22 +148,36 @@ const IndexNavbar = ({ signout }) => {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
+              {auth.isEmpty ?
                 <NavLink href="/login">
-                <Button
-                  className="btn-switch"
-                  color="info"
-                  id="upgrade-to-pro"
-                >
-                  <i className="now-ui-icons  mr-1"></i>
-                  Sign IN
-                </Button> 
-                <Button className="btn-switch" onClick={() => signout()}>
-                  Log out
-                </Button>
-                </NavLink>
+                  <Button
+                    className="btn-switch"
+                    color="info"
+                    id="upgrade-to-pro"
+                  >
+                    <i className="now-ui-icons  mr-1"></i>
+                    Sign IN
+                  </Button>
+                </NavLink> 
+                : null }
                 <UncontrolledTooltip target="#upgrade-to-pro">
                   You are Welcome 
                 </UncontrolledTooltip>
+              </NavItem>
+              <NavItem>
+                {!auth.isEmpty ? 
+                  <NavLink href="/logout">
+                    <Button
+                        className="btn-switch"
+                        color="info"
+                        id="upgrade-to-pro"
+                        onClick={() => signout()}
+                      >
+                        <i className="now-ui-icons  mr-1"></i>
+                        Log Out
+                    </Button>
+                  </NavLink> 
+                : null }
               </NavItem>
         
               <NavItem>

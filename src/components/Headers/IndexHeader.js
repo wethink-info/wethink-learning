@@ -28,18 +28,20 @@ function IndexHeader() {
     <>
       <div className="page-header" filter-color="blue"
       style={{
-        backgroundImage: "url(" + require("assets/img/header.jpg") + ")",
+        backgroundImage: "url(" + require("assets/img/elearning2.png") + ")",
+        backgroundRepeat: 'repeat-x'
       }}
       >
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/header.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/elearning2.png") + ")",
+            backgroundRepeat: 'repeat-x'
           }}
           ref={pageHeader}
         ></div>
         <Container>
-          <div className="content-center brand">
+          <div className="content-center brand" style={{ marginTop:'320px'}}>
             <h1 className=" indexHeader">WeThink Learning Platform</h1>
             <h2 >
             A simple, open and highly interactive learning experience that instructors and learners like

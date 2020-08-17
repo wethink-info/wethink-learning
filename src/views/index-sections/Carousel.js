@@ -15,29 +15,24 @@ import {
 const items = [
   {
     src: require("assets/img/screen01.png"),
-    altText: "Our courses",
-    caption: "Our courses",
+    altText: "slide_1",
+    caption: "Build your classes catalog in an easy and friendly dashboard",
   },
   {
     src: require("assets/img/screen02.png"),
-    altText: "Somewhere Beyond, United States",
-    caption: "Somewhere Beyond, United States",
+    altText: "slide_2",
+    caption: "Have a complete and granular administrative control over you platform",
   },
   {
     src: require("assets/img/screen03.png"),
-    altText: "Somewhere Beyond, United States",
-    caption: "Somewhere Beyond, United States",
+    altText: "slide_3",
+    caption: "Create your courses content in an interactive interface and get control on when to publish it",
   },
   {
     src: require("assets/img/screen04.png"),
-    altText: "Somewhere Beyond, United States",
-    caption: "Somewhere Beyond, United States",
-  },
-  {
-    src: require("assets/img/screen05.png"),
-    altText: "Yellowstone National Park, United States",
-    caption: "Yellowstone National Park, United States",
-  },
+    altText: "slide_4",
+    caption: " Get on demand videoconferencing, chat, sharing, polling integrations in one place",
+  }
 ];
 
 function CarouselSection() {
@@ -91,7 +86,7 @@ function CarouselSection() {
                     >
                       <img src={item.src} alt={item.altText} />
                       <div className="carousel-caption d-none d-md-block">
-                        <h5>{item.caption}</h5>
+                        <h5 style={{color:'#17a2b8'}}>{item.caption}</h5>
                       </div>
                     </CarouselItem>
                   );
