@@ -16,7 +16,7 @@ return (
        </div>  
        <div className="blockquote-footer text-center " >
         
-         <p><Moment>{DataNow}</Moment></p>
+         <h4><Moment>{DataNow}</Moment></h4>
         
         </div> 
     </div>
