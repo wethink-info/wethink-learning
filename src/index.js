@@ -9,10 +9,13 @@ import { createStore, applyMiddleware, compose  } from 'redux';
 import reduxThunk from "redux-thunk";
 import logger from "redux-logger";
 import reducers from "./store/reducers/index.js";
-
 // ENHANCING STORE WITH FIREBASE
 import { reactReduxFirebase } from "react-redux-firebase";
 import firebase from "./services/firebase";
+//set Localization
+import './Localization/i18n';
+//set time zone
+require('moment-timezone');
 
 const createStoreWithFirebase = compose(reactReduxFirebase(firebase))(
   createStore

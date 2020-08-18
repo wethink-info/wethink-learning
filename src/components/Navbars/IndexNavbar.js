@@ -21,7 +21,14 @@ import {
 } from "reactstrap";
 import WLearningLogo from '../Logo/logo.jsx';
 
-const IndexNavbar = ({ signout, auth }) => {
+// the hoc
+import { withNamespaces } from 'react-i18next';
+import i18n from '../../Localization/i18n';
+
+const changeLanguage = (lng) => {
+  i18n.changeLanguage(lng);
+}
+const IndexNavbar = ({ signout, auth, t }) => {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
@@ -93,7 +100,7 @@ const IndexNavbar = ({ signout, auth }) => {
                       href="/home"
                       >
                       <i className="now-ui-icons "></i>
-                      <p>Home</p>
+                    <p>{t('home')}</p>
                   </NavLink>
               </NavItem>
               <UncontrolledDropdown nav>
@@ -105,45 +112,45 @@ const IndexNavbar = ({ signout, auth }) => {
                   onClick={(e) => e.preventDefault()}
                 >
                   <i className="now-ui-icons design_app mr-1"></i>
-                  <p>platform</p>
+                  <p>{t('platform')}</p>
                 </DropdownToggle>
                 <DropdownMenu data-background-color="black"> 
                     {!auth.isEmpty ?  // isEmpty means is Not Authenticated
                       <DropdownItem>
                       <NavLink href="/Contacts-page">
                       <i className="now-ui-icons files_box mr-1"></i>
-                      Contacts
+                      {t('contacts')}
                       </NavLink>
                       </DropdownItem> 
                     :null }
                   <DropdownItem>
                   <NavLink href="/Services-page">
                     <i className="now-ui-icons business_briefcase-24 mr-1"></i>
-                    Services
+                    {t('services')}
                     </NavLink>
                   </DropdownItem>
                   <DropdownItem>
                     <NavLink href="/OurOffers-page">
                     <i className="now-ui-icons objects_spaceship mr-1"></i>
-                    Our Offers
+                    {t('our_offers')}
                     </NavLink>
                   </DropdownItem>
                   <DropdownItem>
                   <NavLink href="/Academy-page">
                     <i className="now-ui-icons education_hat mr-1"></i>
-                   Academy
+                   {t('academy')}
                    </NavLink>
                   </DropdownItem>
                   <DropdownItem>
                   <NavLink href="/AboutUs-page">
                     <i className="now-ui-icons travel_info mr-1"></i>
-                   About Us
+                   {t('about_us')}
                    </NavLink>
                   </DropdownItem>
                   <DropdownItem >
                     <NavLink href="/ContactUs-page">
                       <i className="now-ui-icons ui-1_email-85 mr-1"></i>
-                    Contact Us
+                    {t('contact_us')}
                     </NavLink>
                   </DropdownItem>
                 </DropdownMenu>
@@ -156,7 +163,7 @@ const IndexNavbar = ({ signout, auth }) => {
                     color="info"
                     id="upgrade-to-pro"
                   >
-                    Sign IN
+                    {t('signin')}
                   </Button>
                 </NavLink> 
                 : null }
@@ -178,19 +185,28 @@ const IndexNavbar = ({ signout, auth }) => {
                   </NavLink> 
                 : null }
               </NavItem>
-        
-              <NavItem>
-                <NavLink
-                  href="#"
-                  target="_blank"
-                  id="twitter-tooltip"
+              <UncontrolledDropdown nav>
+                <DropdownToggle
+                  caret
+                  color="default"
+                  href="#pablo"
+                  nav
+                  onClick={(e) => e.preventDefault()}
                 >
-                  <i className="now-ui-icons business_globe mr-1"></i>
-                </NavLink>
-                <UncontrolledTooltip target="#twitter-tooltip">
-                  Select language
-                </UncontrolledTooltip>
-              </NavItem> 
+                <i className="now-ui-icons business_globe mr-1"></i>
+                </DropdownToggle>
+               <DropdownMenu data-background-color="black" >
+                 <DropdownItem onClick={() => changeLanguage('en')}>
+                   <i href="#">ENGLISH</i>
+                 </DropdownItem>
+                 <DropdownItem onClick={() => changeLanguage('fr')}>
+                   <i href="#">FRENSH</i>
+                 </DropdownItem>
+                 <DropdownItem onClick={() => changeLanguage('ar')}>
+                   <i href="#">ARABIC</i>
+                 </DropdownItem>
+               </DropdownMenu>
+               </UncontrolledDropdown>
               <NavItem>
                 <NavLink
                   href="https://www.facebook.com/GlobalService5"
@@ -229,4 +245,4 @@ export default compose(
     mapStateToProps,
     mapDispatchToProps
   )
-)(IndexNavbar);
+)(withNamespaces()(IndexNavbar));

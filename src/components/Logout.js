@@ -14,7 +14,7 @@ return (
             <h3>You are successfully Logged Out</h3>
             <p>Happy to see you on WeThink Learning Platform, Goodbye</p>
        </div>  
-       <div className="blockquote-footer text-center " >
+       <div className="blockquote-footer text-center mt-5" >
         
          <h4><Moment>{DataNow}</Moment></h4>
         
