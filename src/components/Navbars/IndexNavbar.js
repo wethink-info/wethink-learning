@@ -21,7 +21,7 @@ import {
 } from "reactstrap";
 import WLearningLogo from '../Logo/logo.jsx';
 
-// the hoc
+// the hoc for translation
 import { withNamespaces } from 'react-i18next';
 import i18n from '../../Localization/i18n';
 
@@ -200,10 +200,10 @@ const IndexNavbar = ({ signout, auth, t }) => {
                    <i href="#">ENGLISH</i>
                  </DropdownItem>
                  <DropdownItem onClick={() => changeLanguage('fr')}>
-                   <i href="#">FRENSH</i>
+                   <i href="#">FRANCAIS</i>
                  </DropdownItem>
                  <DropdownItem onClick={() => changeLanguage('ar')}>
-                   <i href="#">ARABIC</i>
+                   <i href="#">العربية </i>
                  </DropdownItem>
                </DropdownMenu>
                </UncontrolledDropdown>

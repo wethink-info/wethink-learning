@@ -4,10 +4,12 @@ import React from "react";
 // reactstrap components
 import { Container } from "reactstrap";
 // core components
-
 import './indexHeader.css';
+// the hoc for translation
+import { withNamespaces } from 'react-i18next';
 
-function IndexHeader() {
+
+const  IndexHeader = ({ t }) => {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -42,9 +44,9 @@ function IndexHeader() {
         ></div>
         <Container>
           <div className="content-center brand" style={{ marginTop:'320px'}}>
-            <h1 className=" indexHeader">WeThink Learning Platform</h1>
+        <h1 className=" indexHeader">{t('wethinkPlatform')}</h1>
             <h2 >
-            A simple, open and highly interactive learning experience that instructors and learners like
+            {t('wethinkDescription')}
              </h2>
           </div>
           
@@ -55,4 +57,4 @@ function IndexHeader() {
   );
 }
 
-export default IndexHeader;
+export default withNamespaces()(IndexHeader);
