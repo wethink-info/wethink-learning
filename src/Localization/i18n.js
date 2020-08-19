@@ -3,21 +3,27 @@ import detector from "i18next-browser-languagedetector";
 import backend from "i18next-xhr-backend";
 import { reactI18nextModule } from "react-i18next";
 
-
-import translationEN from '../Localization/translations/en/translations.json';
-import translationFR from '../Localization/translations/fr/translations.json';
-import translationAR from '../Localization/translations/ar/translations.json';
+import navbarEN from '../Localization/locales/en/navbar.json';
+import navbarFR from '../Localization/locales/fr/navbar.json';
+import navbarAR from '../Localization/locales/ar/navbar.json';
+import homeEN from '../Localization/locales/en/home.json';
+import homeFR from '../Localization/locales/fr/home.json';
+import homeAR from '../Localization/locales/ar/home.json';
 
  // the translations
 const resources = {
+  // Namspaces
   en: {
-    translation: translationEN
+    navbar: navbarEN,
+    home : homeEN
   },
   fr: {
-    translation: translationFR
+    navbar: navbarFR,
+    home: homeFR
   },
   ar: {
-    translation: translationAR
+    navbar: navbarAR,
+    home: homeAR
   }
 };
 
@@ -28,6 +34,8 @@ i18n
   .init({
     resources,
     lng: "en",
+    // Set default namespace
+    defaultNS: "navbar",
     fallbackLng: "en", // use en if detected lng is not available
 
     keySeparator: false, // we do not use keys in form messages.welcome

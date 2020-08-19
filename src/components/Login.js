@@ -17,7 +17,7 @@ const Login = ({
   history,
   loading
 }) => {
-  const [newUser, setNewUser] = useState(false);
+  const [newUser, /* setNewUser */] = useState(false);
   const [reset, SetReset] = useState(false);
   const [credentials, handleChange, handleSubmit, errors] = useForm(
     login,
@@ -121,10 +121,10 @@ const Login = ({
           {newUser ? "Already have an account?" : "Don't have an account yet?"}
         </p>
         <button
-          onClick={() => {
+         /*  onClick={() => {
             setNewUser(!newUser);
             if (reset) SetReset(false);
-          }}
+          }} */
           className="btn-switch"
         >
           {newUser ? "Sign in" : "Create an account"}

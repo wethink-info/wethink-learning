@@ -2,21 +2,19 @@ import React from "react";
 
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
-
+import { withNamespaces } from 'react-i18next';
 // core components
 
-function CompleteExamples() {
+function CompleteExamples( { t}) {
   return (
     <>
       <div className="section">
         <Container className="text-center">
           <Row className="justify-content-md-center">
             <Col lg="8" md="12">
-              <h2 className="title" style={{ color:'blue'}}>Why WeThink Learning Platform </h2>
+              <h2 className="title" style={{ color:'blue'}}>{t('home:whyWethink_Title')} </h2>
               <h5 className="description">
-               Aliquip ea proident ex exercitation eu minim. Anim tempor Lorem cillum dolore est irure eu consectetur.
-              Voluptate laboris veniam non ipsum esse laboris id aliqua.Fugiat id excepteur occaecat proident pariatur.
-               Minim elit incididunt amet officia voluptate. Aliquip in magna occaecat magna laborum fugiat pariatur.
+                  {t('home:whyWethink_paragraph')}
               </h5>
             </Col>
           </Row>
@@ -26,4 +24,4 @@ function CompleteExamples() {
   );
 }
 
-export default CompleteExamples;
+export default withNamespaces()(CompleteExamples);

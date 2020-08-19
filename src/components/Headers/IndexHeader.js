@@ -44,9 +44,9 @@ const  IndexHeader = ({ t }) => {
         ></div>
         <Container>
           <div className="content-center brand" style={{ marginTop:'320px'}}>
-        <h1 className=" indexHeader">{t('wethinkPlatform')}</h1>
+        <h1 className=" indexHeader">{t('home:wethinkPlatform')}</h1>
             <h2 >
-            {t('wethinkDescription')}
+            {t('home:wethinkDescription')}
              </h2>
           </div>
           

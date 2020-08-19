@@ -8,8 +8,9 @@
     "firebase": "^6.3.3",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
-    "i18next": "^19.6.3",
-    "i18next-browser-languagedetector": "^6.0.0",
+    "i18next": "^19.7.0",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "i18next-http-backend": "^1.0.18",
     "i18next-xhr-backend": "^3.2.2",
     "moment": "^2.26.0",
     "moment-timezone": "^0.5.31",
@@ -34,7 +35,7 @@
     "typescript": "^3.5.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-app-rewired start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -60,5 +61,9 @@
   },
   "optionalDependencies": {
     "typescript": "3.9.5"
+  },
+  "devDependencies": {
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.1.6"
   }
 }
