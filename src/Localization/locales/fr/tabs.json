@@ -1,0 +1,12 @@
+{
+    "lms_title": " LMS Portail",
+    "lms_paragraph_desc": "Les apprenants, les équipes de cours et les instructeurs utilisent le LMS pendant toute la durée d'un cours.le LMS permet d'accéder au contenu des cours et à l'infrastructure de support (horaires, forums de discussion, outils de collaboration, administration des étudiants, génération de certificats, messagerie, etc.).Soutient également les cours en ligne, les campus en ligne et les programmes d'études en ligne.L'expérience de l'apprenant personnalisable reflète votre identité de marque et vos préférences uniques.",
+    "cms_title": "CMS Portail",
+    "cms_paragraph_desc": "Création de pointe avec un Système de fonctionnalités Studio. CMS renforce l'apprentissage et le développement grâce à des expériences personnalisées alimentées par les dernières innovations en matière de conception pédagogique. Créez des cours et faites évoluer votre contenu en direct avec les apprenants, gérez votre horaire de cours, votre équipe de cours et votre politique de notation. Importez facilement du contenu et gérez le contenu sur toutes les plateformes, et accédez à des outils tiers riches ou ajoutez des blocs de construction supplémentaires",
+    "visio_title": "Vidéo Conférence",
+    "visio_paragraph_desc": "Les outils d'apprentissage synchrone devraient faire partie de votre système de gestion (LMS). Une solution professionnelle pour enseigner en ligne aux étudiants à distance! permet le partage en temps réel de l'audio, de la vidéo, des diapositives, du chat et de l'écran. Les étudiants participent au partage d'icônes emoji, de sondages et de salles de sous-commission.",
+    "scalability_title": "Évolutivité",
+    "scalability_paragraph_desc": "WeThink Learning Auto Scaling surveille vos applications et ajuste automatiquement la capacité pour maintenir des performances stables et prévisibles au coût le plus bas possible. Grâce à Auto Scaling du système cloud, il est facile de configurer la mise à l'échelle des applications pour plusieurs ressources sur plusieurs services en quelques minutes.",
+    "availability_title": "Disponibilité",
+    "availability_paragraph_desc": "Wethink Learning est une plateforme hébergée dans le cloud avec une haute disponibilité, sécurité et durabilité qui offre plus de continuité pour les cours."
+}

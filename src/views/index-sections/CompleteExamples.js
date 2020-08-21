@@ -12,7 +12,7 @@ function CompleteExamples( { t}) {
         <Container className="text-center">
           <Row className="justify-content-md-center">
             <Col lg="8" md="12">
-              <h2 className="title" style={{ color:'blue'}}>{t('home:whyWethink_Title')} </h2>
+              <h2 className="title">{t('home:whyWethink_Title')} </h2>
               <h5 className="description">
                   {t('home:whyWethink_paragraph')}
               </h5>

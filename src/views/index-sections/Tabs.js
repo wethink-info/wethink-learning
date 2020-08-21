@@ -1,5 +1,6 @@
 import React from "react";
-import { FcIdea, FcApproval, FcBullish, FcCustomerSupport  } from 'react-icons/fc';
+import {FcApproval, FcBullish, FcCustomerSupport  } from 'react-icons/fc';
+import { withNamespaces } from 'react-i18next';
 // reactstrap components
 import {
   Card,
@@ -14,13 +15,15 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import cmsLogo from "../../assets/img/cms.svg";
+import lmsLogo from "../../assets/img/lms.svg";
 
 // core components
 const styleicons = {
   width : '50px',
   height: '50px'
 }
-function Tabs() {
+function Tabs({ t }) {
   const [iconPills, setIconPills] = React.useState("1");
   //const [pills, setPills] = React.useState("1");
   return (
@@ -28,10 +31,24 @@ function Tabs() {
       <div className="section section-tabs">
         <Container>
           <Row>
-            <Col className="ml-auto mr-auto" md="10" xl="6">
+          <Col className="ml-auto mr-auto" md="10" xl="6">
               {/* <p className="category"> title option features </p> */}
-              <Card>
-                <CardHeader>
+              <Card >
+                <CardBody >
+                  <TabContent
+                    className="text-center"
+                    activeTab={"iconPills" + iconPills}
+                  >
+                    <TabPane tabId="iconPills1">
+                     <img src ={lmsLogo} alt="cms-logo"></img>
+                    </TabPane>
+                    
+                  </TabContent>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col className="ml-auto mr-auto" md="10" xl="6">
+                  <CardHeader>
                   <Nav className="justify-content-center" role="tablist" tabs>
                     <NavItem>
                     
@@ -43,166 +60,176 @@ function Tabs() {
                           setIconPills("1");
                         }}
                       >
-                       <FcIdea style={styleicons}/>
+                       
                         <i className="now-ui-icons "></i>
-                        Fundamentals
+                        {t('tabs:lms_title')}
                       </NavLink>
                     </NavItem>
                    
                   </Nav>
                 </CardHeader>
-                <CardBody>
-                  <TabContent
-                    className="text-center"
-                    activeTab={"iconPills" + iconPills}
-                  >
-                    <TabPane tabId="iconPills1">
+                <p>
+                        {t('tabs:lms_paragraph_desc')}
+                </p>
+                  </Col> 
+                </Row>
+                <Row>
+                <Col className="ml-auto mr-auto" md="10" xl="6">
+                <div> 
+                      <CardHeader>
+                        <Nav className="justify-content-center" role="tablist" tabs>
+                          <NavItem>
+                            <NavLink
+                              className={iconPills === "2" ? "active" : ""}
+                              href="#pablo"
+                              onClick={(e) => {
+                                e.preventDefault();
+                                setIconPills("1");
+                              }}
+                            >
+                              <i className="now-ui-icons "></i>
+                              {t('tabs:cms_title')}
+                            </NavLink>
+                          </NavItem>   
+                        </Nav>
+                      </CardHeader>
                       <p>
-                        <span>LMS/CMS </span> I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. So when you get something that has
-                        the name Kanye West on it, it’s supposed to be pushing
-                        the furthest possibilities.
+                        {t('tabs:cms_paragraph_desc')}
                       </p>
-                    </TabPane>
-                    
-                  </TabContent>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col className="ml-auto mr-auto" md="10" xl="6">
-              {/* <p className="category"> title option features </p> */}
-              <Card>
-                <CardHeader>
-                  <Nav className="justify-content-center" role="tablist" tabs>
-                    <NavItem>
-                      <NavLink
-                        className={iconPills === "1" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIconPills("1");
-                        }}
-                      >
-                        <FcCustomerSupport style={styleicons}/>
-                        <i className="now-ui-icons"></i>
-                        VisioConferencing
-                      </NavLink>
-                    </NavItem>
-                    
-                  </Nav>
-                </CardHeader>
-                <CardBody>
-                  <TabContent
-                    className="text-center"
-                    activeTab={"iconPills" + iconPills}
-                  >
-                    <TabPane tabId="iconPills1">
-                      <p>
-                        VisioConferencing as a service, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. So when you get something that has
-                        the name Kanye West on it, it’s supposed to be pushing
-                        the furthest possibilities.the furthest possibilities.
-                      </p>
-                    </TabPane>
-                    
-                  </TabContent>
-                </CardBody>
-              </Card>
-            </Col>
-            
-          </Row>
-          <Row>
-            <Col className="ml-auto mr-auto" md="10" xl="6">
-              {/* <p className="category"> title option features </p> */}
-              <Card>
-                <CardHeader>
-                  <Nav className="justify-content-center" role="tablist" tabs>
-                    <NavItem>
-                    
-                      <NavLink
-                        className={iconPills === "1" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIconPills("1");
-                        }}
-                      >
-                       <FcBullish style={styleicons}/>
-                        <i className="now-ui-icons "></i>
-                        Scalability
-                      </NavLink>
-                    </NavItem>
-                   
-                  </Nav>
-                </CardHeader>
-                <CardBody>
-                  <TabContent
-                    className="text-center"
-                    activeTab={"iconPills" + iconPills}
-                  >
-                    <TabPane tabId="iconPills1">
-                      <p>
-                        <span>Scalable </span> I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. So when you get something that has
-                        the name Kanye West on it, it’s supposed to be pushing
-                        the furthest possibilities.
-                      </p>
-                    </TabPane>
-                    
-                  </TabContent>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col className="ml-auto mr-auto" md="10" xl="6">
-              {/* <p className="category"> title option features </p> */}
-              <Card>
-                <CardHeader>
-                  <Nav className="justify-content-center" role="tablist" tabs>
-                    <NavItem>
-                      <NavLink
-                        className={iconPills === "1" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIconPills("1");
-                        }}
-                      >
-                        <FcApproval style={styleicons}/>
-                        <i className="now-ui-icons"></i>
-                        Availability
-                      </NavLink>
-                    </NavItem>
-                    
-                  </Nav>
-                </CardHeader>
-                <CardBody>
-                  <TabContent
-                    className="text-center"
-                    activeTab={"iconPills" + iconPills}
-                  >
-                    <TabPane tabId="iconPills1">
-                      <p>
-                        VisioConferencing as a service, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. So when you get something that has
-                        the name Kanye West on it, it’s supposed to be pushing
-                        the furthest possibilities.the furthest possibilities.
-                      </p>
-                    </TabPane>
-                    
-                  </TabContent>
-                </CardBody>
-              </Card>
-            </Col>
-            
-          </Row>
-        </Container>
+                    </div>
+                  </Col>
+                  <Col className="ml-auto mr-auto" md="10" xl="6">
+                    <Card>
+                      <CardBody>
+                        <TabContent
+                          className="text-center"
+                          activeTab={"iconPills" + iconPills}
+                        >
+                          <TabPane tabId="iconPills1">
+                          <img src ={cmsLogo} alt="cms-logo"></img>
+                          </TabPane>
+                          
+                        </TabContent>
+                      </CardBody>
+                    </Card>
+                  </Col>
+                </Row>
+                <Row>
+                <Col className="ml-auto mr-auto" md="10" xl="4" shadow-none>
+                    <Card>
+                      <CardHeader>
+                        <Nav className="justify-content-center" role="tablist" tabs>
+                          <NavItem>
+                            <NavLink
+                              className={iconPills === "3" ? "active" : ""}
+                              href="#pablo"
+                              onClick={(e) => {
+                                e.preventDefault();
+                                setIconPills("1");
+                              }}
+                            >
+                              <FcCustomerSupport style={styleicons}/>
+                              <i className="now-ui-icons"></i>
+                              {t('tabs:visio_title')}
+                            </NavLink>
+                          </NavItem>
+                          
+                        </Nav>
+                      </CardHeader>
+                      <CardBody>
+                        <TabContent
+                          className="text-center"
+                          activeTab={"iconPills" + iconPills}
+                        >
+                          <TabPane tabId="iconPills1">
+                            <p>
+                            {t('tabs:visio_paragraph_desc')}
+                            </p>
+                          </TabPane>
+                          
+                        </TabContent>
+                      </CardBody>
+                    </Card>
+                  </Col>
+                  <Col className="ml-auto mr-auto" md="10" xl="4">
+                    <Card>
+                      <CardHeader>
+                        <Nav className="justify-content-center" role="tablist" tabs>
+                          <NavItem>
+                          
+                            <NavLink
+                              className={iconPills === "4" ? "active" : ""}
+                              href="#pablo"
+                              onClick={(e) => {
+                                e.preventDefault();
+                                setIconPills("1");
+                              }}
+                            >
+                            <FcBullish style={styleicons}/>
+                              <i className="now-ui-icons "></i>
+                              {t('tabs:scalability_title')}
+                            </NavLink>
+                          </NavItem>
+                        
+                        </Nav>
+                      </CardHeader>
+                      <CardBody>
+                        <TabContent
+                          className="text-center"
+                          activeTab={"iconPills" + iconPills}
+                        >
+                          <TabPane tabId="iconPills1">
+                            <p>
+                              {t('tabs:scalability_paragraph_desc')}
+                            </p>
+                          </TabPane>
+                          
+                        </TabContent>
+                      </CardBody>
+                    </Card>
+                  </Col>
+                  <Col className="ml-auto mr-auto" md="10" xl="4">
+                    <Card>
+                      <CardHeader>
+                        <Nav className="justify-content-center" role="tablist" tabs>
+                          <NavItem>
+                            <NavLink
+                              className={iconPills === "5" ? "active" : ""}
+                              href="#pablo"
+                              onClick={(e) => {
+                                e.preventDefault();
+                                setIconPills("1");
+                              }}
+                            >
+                              <FcApproval style={styleicons}/>
+                              <i className="now-ui-icons"></i>
+                              {t('tabs:availability_title')}
+                            </NavLink>
+                          </NavItem>
+                          
+                        </Nav>
+                      </CardHeader>
+                      <CardBody>
+                        <TabContent
+                          className="text-center"
+                          activeTab={"iconPills" + iconPills}
+                        >
+                          <TabPane tabId="iconPills1">
+                            <p>
+                              {t('tabs:availability_paragraph_desc')}
+                            </p>
+                          </TabPane>
+                          
+                        </TabContent>
+                      </CardBody>
+                    </Card>
+                  </Col>
+                  
+                </Row>
+              </Container>
       </div>
     </>
   );
 }
 
-export default Tabs;
+export default withNamespaces()(Tabs);

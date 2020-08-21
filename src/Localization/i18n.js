@@ -9,21 +9,27 @@ import navbarAR from '../Localization/locales/ar/navbar.json';
 import homeEN from '../Localization/locales/en/home.json';
 import homeFR from '../Localization/locales/fr/home.json';
 import homeAR from '../Localization/locales/ar/home.json';
+import tabsEN from '../Localization/locales/en/tabs.json';
+import tabsFR from '../Localization/locales/fr/tabs.json';
+import tabsAR from '../Localization/locales/ar/tabs.json';
 
  // the translations
 const resources = {
   // Namspaces
   en: {
     navbar: navbarEN,
-    home : homeEN
+    home : homeEN,
+    tabs : tabsEN
   },
   fr: {
     navbar: navbarFR,
-    home: homeFR
+    home: homeFR,
+    tabs: tabsFR
   },
   ar: {
     navbar: navbarAR,
-    home: homeAR
+    home: homeAR,
+    tabs: tabsAR
   }
 };
 
