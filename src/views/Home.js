@@ -3,7 +3,7 @@ import React from "react";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import Tabs from "./index-sections/Tabs.js";
 import Carousel from "./index-sections/Carousel.js";
-import NucleoIcons from "./index-sections/NucleoIcons.js";
+import NucleoIcons from "./index-sections/widgetAboveFooter.js";
 import CompleteExamples from "./index-sections/CompleteExamples.js";
 import Partners from "components/Partners/Partners.js";
 import Testimonials from "components/Testimonials/Testimonials.js";

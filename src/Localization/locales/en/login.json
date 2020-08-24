@@ -1,32 +1,14 @@
 {
-  "login": {
-    "login": [
-      "Signin",
-      "Identifiez-vous"
-    ],
-    "signup": [
-      "Signup",
-      "Enregistrez-vous"
-    ],
-    "textLogin": [
-      "Please Signin using account detail bellow",
-      "Veuillez vous connecter en utilisant les détails du compte ci-dessous"
-    ],
-    "textSignup": [
-      "Please Signup using account detail bellow",
-      "Veuillez vous enregistrer en utilisant les détails du compte ci-dessous"
-    ],
-    "switchSignup": [
-      "Switch to Signup",
-      "Passer á l'inscription"
-    ],
-    "switchSignin": [
-      "Switch to Signin",
-      "Passer á l'identification"
-    ],
-    "pwd": [
-      "Password",
-      "Mot de Passe"
-    ]
-  }
+  "sign_in": " Sign in",
+  "email": "E-mail",
+  "your_email": " Your e-mail",
+  "password": "Password",
+  "your_pass": "Your password",
+  "button_signin": "Sign in",
+  "forget_pass": "Forget password",
+  "no_account": "Don't have an account yet ?",
+  "button_new_account": "Create an account",
+  "reset_pass" :"Reset password",
+  "back_to_signin": "Back to sign in",
+  "button_reset_pass": "Reset password"
 }

@@ -1,0 +1,14 @@
+{
+  "sign_in": " Se Connecter",
+  "email": "E-mail",
+  "your_email": " Votre e-mail",
+  "password": "Mot de passe",
+  "your_pass": "votre mot de passe",
+  "button_signin": "Se Connecter",
+  "forget_pass": "Mot de passe oublié",
+  "no_account": "Vous n'avez pas encore de compte ?",
+  "button_new_account": "Créer un nouveau compte",
+  "reset_pass": "Réinitialiser le mot de passe",
+  "back_to_signin": "Retour pour vous connecter",
+  "button_reset_pass": "Réinitialiser"
+}

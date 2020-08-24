@@ -1,0 +1,14 @@
+{
+  "sign_in": "تسجيل الدخول",
+  "email": "البريد الإلكتروني",
+  "your_email": "بريدك الالكتروني",
+  "password": "كلمة المرور",
+  "your_pass": "كلمتك السرية",
+  "button_signin": "دخول",
+  "forget_pass": "نسيت كلمة المرور",
+  "no_account": "لا تملك حسابا حتى الآن ؟",
+  "button_new_account": "انشئ حساب جديد",
+  "reset_pass": "إعادة تعيين كلمة المرور",
+  "back_to_signin": "العودة للاتصال",
+  "button_reset_pass": "إرسال"
+}

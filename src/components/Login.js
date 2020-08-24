@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { withNamespaces } from 'react-i18next';
 import { connect } from "react-redux";
 import { signup, signin, resetPassword } from "../store/actions/auth";
 import useForm from "../utils/useForm";
@@ -15,7 +16,7 @@ const Login = ({
   resetPassword,
   authMsg,
   history,
-  loading
+  loading, t
 }) => {
   const [newUser, /* setNewUser */] = useState(false);
   const [reset, SetReset] = useState(false);
@@ -25,7 +26,7 @@ const Login = ({
     reset
   );
 
-  function login() {
+  function login( ) {
     if (newUser) {
       // signup
       signup(credentials.email, credentials.password);
@@ -41,24 +42,23 @@ const Login = ({
       }
     }
   }
-
   return (
     <div className="row justify-content-center align-items-center" style={mt_form}>
     <div className="login" >
       <h2>
-        {reset ? "Reset password" : newUser ? "Create an account" : "Sign in"}
+        {reset ? (t('auth:reset_pass')) : newUser ? "Create an account" : (t('auth:sign_in'))}
       </h2>
       {authMsg && <p className="auth-message">{authMsg}</p>}
       <form onSubmit={handleSubmit} noValidate>
         {/* Email */}
         <div className="input-group">
-          <label htmlFor="email">E-mail</label>
+          <label htmlFor="email">{t('auth:email')}</label>
           <input
             type="email"
             id="email"
             name="email"
             value={credentials.email}
-            placeholder="Your e-mail"
+            placeholder={t('auth:your_email')}
             onChange={handleChange}
             className={
               (errors.emailIsEmpty || errors.emailFormatInvalid) &&
@@ -74,13 +74,13 @@ const Login = ({
         {/* PASSWORD */}
         {!reset && (
           <div className="input-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">{t('auth:password')}</label>
             <input
               type="password"
               id="password"
               name="password"
               value={credentials.password}
-              placeholder="Your password"
+              placeholder={t('auth:your_pass')}
               onChange={handleChange}
               className={
                 (errors.passIsStrong || errors.passIsEmpty) && "input-error"
@@ -97,28 +97,28 @@ const Login = ({
             {loading ? (
               <Spinner />
             ) : reset ? (
-              "Reset password"
+              t('auth:button_reset_pass')
             ) : newUser ? (
               "Create account"
             ) : (
-              "Sign in"
+              t('auth:button_signin')
             )}
           </button>
           {!newUser && !reset && (
             <button onClick={() => SetReset(true)} className="btn-link">
-              Forgot password?
+              {t('auth:forget_pass')}
             </button>
           )}
           {reset && (
             <button onClick={() => SetReset(false)} className="btn-link">
-              Back to sign in
+              {t('auth:back_to_signin')}
             </button>
           )}
         </div>
       </form>
       <footer className="login-footer">
         <p>
-          {newUser ? "Already have an account?" : "Don't have an account yet?"}
+          {newUser ? "Already have an account?" : (t('auth:no_account'))}
         </p>
         <button
          /*  onClick={() => {
@@ -127,7 +127,7 @@ const Login = ({
           }} */
           className="btn-switch"
         >
-          {newUser ? "Sign in" : "Create an account"}
+          {newUser ? "Sign in" : (t('auth:button_new_account'))}
         </button>
       </footer>
     </div>
@@ -154,4 +154,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Login);
+)(withNamespaces()(Login));

@@ -68,8 +68,8 @@ function Tabs({ t }) {
                    
                   </Nav>
                 </CardHeader>
-                <p>
-                        {t('tabs:lms_paragraph_desc')}
+                <p style={{marginTop:'15px'}}>
+                      {t('tabs:lms_paragraph_desc')}
                 </p>
                   </Col> 
                 </Row>
@@ -80,7 +80,7 @@ function Tabs({ t }) {
                         <Nav className="justify-content-center" role="tablist" tabs>
                           <NavItem>
                             <NavLink
-                              className={iconPills === "2" ? "active" : ""}
+                              className={iconPills === "1" ? "active" : ""}
                               href="#pablo"
                               onClick={(e) => {
                                 e.preventDefault();
@@ -93,7 +93,7 @@ function Tabs({ t }) {
                           </NavItem>   
                         </Nav>
                       </CardHeader>
-                      <p>
+                      <p style={{marginTop:'15px'}}>
                         {t('tabs:cms_paragraph_desc')}
                       </p>
                     </div>

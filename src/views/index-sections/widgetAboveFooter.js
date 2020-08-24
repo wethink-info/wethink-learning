@@ -1,20 +1,20 @@
 import React from "react";
+import { withNamespaces } from 'react-i18next';
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 
 // core components
 
-function NucleoIcons() {
+function NucleoIcons({ t }) {
   return (
     <>
-      <div className="section section-nucleo-icons">
+      <div className="section section-nucleo-icons" style={{backgroundColor: '#808080'}}>
         <Container>
           <Row>
             <Col lg="6" md="12">
-              <h2 className="title">WeThink Learning</h2>
+              <h2 className="title">{t('widget:widget_title')}</h2>
               <h5 className="description">
-              Build with WeThink Learning an attractive, social and highly interactive online school.
-              Create online courses and host webinars. Easy and immediate implementation.
+                {t('widget:widget_paragraph')}
               </h5>
               <Button
                 className="btn-round mr-1"
@@ -23,7 +23,7 @@ function NucleoIcons() {
                 size="lg"
                 target="_blank"
               >
-                View Demo
+                {t('widget:button_demo')}
               </Button>
               <Button
                 className="btn-round"
@@ -33,7 +33,7 @@ function NucleoIcons() {
                 size="lg"
                 target="_blank"
               >
-                View More
+                {t('widget:button_more')}
               </Button>
             </Col>
             <Col lg="6" md="12">
@@ -62,4 +62,4 @@ function NucleoIcons() {
   );
 }
 
-export default NucleoIcons;
+export default withNamespaces()(NucleoIcons);

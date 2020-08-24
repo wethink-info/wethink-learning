@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    Row,Col
+    Row, Col, Container, TabContent, TabPane, CardBody, Card
 } from 'reactstrap';
 import './Partners.styles.scss';
 import imgHope from "assets/img/hope.png";
@@ -8,20 +8,59 @@ import imgLightenEduc from "assets/img/enlightenEducation.png";
 import imgHorizon from "assets/img/horizonUniversity.png";
 
 function PartnersItem () { 
+  const [iconPills] = React.useState("1");
   return (
-        
-          <Row >
-            <Col className="menu-item" xs={6} md={3} >
-                <img src={imgHope} alt="img"/>
+        <Container>
+          <Row>
+            <Col className="ml-auto mr-auto" md="10" xl="6">
+              <Card >
+                <CardBody >
+                  <TabContent
+                    className="text-center"
+                    activeTab={"iconPills" + iconPills}
+                  >
+                    <TabPane tabId="iconPills1">
+                     <img src ={imgHope} alt="cms-logo"></img>
+                    </TabPane>
+                    
+                  </TabContent>
+                </CardBody>
+              </Card>
             </Col>
-            <Col className="menu-item" xs={6} md={3}>
-                <img src={imgLightenEduc}  alt="img"/>
+            <Col className="ml-auto mr-auto" md="10" xl="6">
+              <Card >
+                <CardBody >
+                  <TabContent
+                    className="text-center"
+                    activeTab={"iconPills" + iconPills}
+                  >
+                    <TabPane tabId="iconPills1">
+                     <img src ={imgLightenEduc} alt="cms-logo"></img>
+                    </TabPane>
+                    
+                  </TabContent>
+                </CardBody>
+              </Card>
             </Col>
-            <Col className="menu-item" xs={6} md={4}>
-                <img src={imgHorizon}  alt="img"/>
+            <Col className="ml-auto mr-auto" md="10" xl="6">
+              <Card >
+                <CardBody >
+                  <TabContent
+                    className="text-center"
+                    activeTab={"iconPills" + iconPills}
+                  >
+                    <TabPane tabId="iconPills1">
+                     <img src ={imgHorizon} alt="cms-logo"></img>
+                    </TabPane>
+                    
+                  </TabContent>
+                </CardBody>
+              </Card>
             </Col>
+
           </Row>
-        
+          </Container>
+
   );
 } ;
 

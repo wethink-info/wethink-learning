@@ -12,6 +12,19 @@ import homeAR from '../Localization/locales/ar/home.json';
 import tabsEN from '../Localization/locales/en/tabs.json';
 import tabsFR from '../Localization/locales/fr/tabs.json';
 import tabsAR from '../Localization/locales/ar/tabs.json';
+import partnersEN from '../Localization/locales/en/partners&testimonials.json';
+import partnersFR from '../Localization/locales/fr/partners&testimonials.json';
+import partnersAR from '../Localization/locales/ar/partners&testimonials.json';
+import widgetEN from '../Localization/locales/en/widgetAboveFooter.json';
+import widgetFR from '../Localization/locales/fr/widgetAboveFooter.json';
+import widgetAR from '../Localization/locales/ar/widgetAboveFooter.json';
+import footerEN from '../Localization/locales/en/footer.json';
+import footerFR from '../Localization/locales/fr/footer.json';
+import footerAR from '../Localization/locales/ar/footer.json';
+import loginEN from '../Localization/locales/en/login.json';
+import loginFR from '../Localization/locales/fr/login.json';
+import loginAR from '../Localization/locales/ar/login.json';
+
 
  // the translations
 const resources = {
@@ -19,17 +32,32 @@ const resources = {
   en: {
     navbar: navbarEN,
     home : homeEN,
-    tabs : tabsEN
+    tabs : tabsEN,
+    partners: partnersEN,
+    widget: widgetEN,
+    footer : footerEN,
+    auth : loginEN
+
   },
   fr: {
     navbar: navbarFR,
     home: homeFR,
-    tabs: tabsFR
+    tabs: tabsFR,
+    partners: partnersFR,
+    widget: widgetFR,
+    footer : footerFR,
+    auth : loginFR
+
   },
   ar: {
     navbar: navbarAR,
     home: homeAR,
-    tabs: tabsAR
+    tabs: tabsAR,
+    partners: partnersAR,
+    widget: widgetAR,
+    footer : footerAR,
+    auth : loginAR
+
   }
 };
 

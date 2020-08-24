@@ -1,13 +1,13 @@
 /*eslint-disable*/
 import React from "react";
-
+import { withNamespaces } from 'react-i18next';
 // reactstrap components
 import {
   Container,
   NavLink,
  } from "reactstrap";
 
-function DarkFooter() {
+function DarkFooter({ t }) {
   return (
     <footer className="footer" data-background-color="black" fixed="bottom" >
       <Container>
@@ -16,14 +16,14 @@ function DarkFooter() {
             <li>
             <NavLink href="/index">
               
-                Wethink learning                
+                {t('footer:w_learning')}               
               
             </NavLink>
             </li>
             <li>
             <NavLink href="/AboutUs-page">
               
-                About Us
+                {t('footer:about_us')}
               
             </NavLink>
             </li>
@@ -45,7 +45,7 @@ function DarkFooter() {
             href="https://www.wethink.info/"
             target="_blank"
           >
-             WeThink.info
+             {t('footer:w_info')}
           </a>
         </div>
       </Container>
@@ -53,4 +53,4 @@ function DarkFooter() {
   );
 }
 
-export default DarkFooter;
+export default withNamespaces()(DarkFooter);
