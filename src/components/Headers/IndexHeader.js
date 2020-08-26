@@ -43,7 +43,7 @@ const  IndexHeader = ({ t }) => {
           ref={pageHeader}
         ></div>
         <Container>
-          <div className="content-center brand" style={{ marginTop:'320px'}}>
+          <div className="content-center brand" style={{ marginTop:'295px'}}>
         <h1 className=" indexHeader">{t('home:wethinkPlatform')}</h1>
             <h2 >
             {t('home:wethinkDescription')}

@@ -19,7 +19,7 @@ function NucleoIcons({ t }) {
               <Button
                 className="btn-round mr-1"
                 color="info"
-                href="/nucleo-icons"
+                href="https://students.wethink.info"
                 size="lg"
                 target="_blank"
               >
@@ -28,7 +28,7 @@ function NucleoIcons({ t }) {
               <Button
                 className="btn-round"
                 color="info"
-                href="#"
+                href="https://www.wethink.info/services"
                 outline
                 size="lg"
                 target="_blank"
