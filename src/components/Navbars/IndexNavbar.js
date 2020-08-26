@@ -123,7 +123,7 @@ const IndexNavbar = ({ signout, auth, t }) => {
                       </NavLink>
                       </DropdownItem> 
                     :null }
-                  <DropdownItem>
+                  {/* <DropdownItem>
                   <NavLink href="/Services-page">
                     <i className="now-ui-icons business_briefcase-24 mr-1"></i>
                     {t('services')}
@@ -140,17 +140,17 @@ const IndexNavbar = ({ signout, auth, t }) => {
                     <i className="now-ui-icons education_hat mr-1"></i>
                    {t('academy')}
                    </NavLink>
-                  </DropdownItem>
-                  <DropdownItem>
-                  <NavLink href="/AboutUs-page">
-                    <i className="now-ui-icons travel_info mr-1"></i>
-                   {t('about_us')}
-                   </NavLink>
-                  </DropdownItem>
+                  </DropdownItem>*/}
                   <DropdownItem >
                     <NavLink href="/ContactUs-page">
                       <i className="now-ui-icons ui-1_email-85 mr-1"></i>
                     {t('contact_us')}
+                    </NavLink>
+                  </DropdownItem>
+                  <DropdownItem> 
+                    <NavLink href="/AboutUs-page">
+                      <i className="now-ui-icons travel_info mr-1"></i>
+                    {t('about_us')}
                     </NavLink>
                   </DropdownItem>
                 </DropdownMenu>
