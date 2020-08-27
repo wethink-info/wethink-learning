@@ -25,10 +25,11 @@ class Contacts extends Component {
           for(let email in emails) {
             newstate.push({
               id : email,
-              fullName: emails[email].fullName,
+              fullName: emails[email].firstName,
+              lastName: emails[email].lastName,
               email: emails[email].email,
-              subject:emails[email].subject,
-              msg: emails[email].msg
+              phoneNumber:emails[email].phoneNumber,
+              message: emails[email].message
 
             });
           }
@@ -52,9 +53,10 @@ class Contacts extends Component {
                             <ContactList
                             key={email.id}
                             fullName={email.fullName}
+                            lastName={email.lastName}
                             email={email.email}
-                            subject={email.subject}
-                            msg={email.msg}
+                            phoneNumber={email.phoneNumber}
+                            message={email.message}
                               />
                         )) }           
                 </div>

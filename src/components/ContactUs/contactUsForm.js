@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input, Row, Col, Container } from 'reactstrap';
-import firebase from '../../../services/firebase';
+import firebase from '../../services/firebase';
 
 export default function ContactUsForm () {
   const [firstName, setFirstName] = useState('');
@@ -9,7 +9,7 @@ export default function ContactUsForm () {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleOnChangeName = (e) => {
+const handleOnChangeName = (e) => {
     setFirstName(e.target.value)
   };
   const handleOnChangeLastName = (e) => {
@@ -32,8 +32,7 @@ export default function ContactUsForm () {
       lastName,
       email,
       phoneNumber,
-      message,
-      complete: false,
+      message
     };
 
     contactsRef.push(contact);
@@ -79,55 +78,3 @@ export default function ContactUsForm () {
       
     );
 }
-  
-
-
-
-/*  constructor(props) {
-    super(props);
-    this.state = {
-      
-        firstName: 'ttttttt',
-        lastName: '',
-        email: '',
-        phoneNumber: '',
-        adress: '',
-        message:''
-        
-      
-    };
-    this.submitData = this.submitData.bind(this);
-    this.inputData = this.inputData.bind(this);
-  }
-  componentDidMount() {
-    firebase
-      .database()
-      .ref(`/contacts`)
-      .on('value', snap => console.log('from db', snap.val()));
-  }
-  submitData(event) {
-    event.preventDefault();
-    firebase
-      .database()
-      .ref(`/contacts`)
-      .push({ 
-        firstName: this.state.firstName,
-        lastName: this.state.lastName,
-        email: this.state.email,
-        phoneNumber: this.state.phoneNumber,
-        adress: this.state.adress,
-        message: this.state.message
-      })
-      .catch(error => console.log(error));
-  }
-  inputData(event) {
-    const firstName = this.refs.input1.value;
-    const lastName = this.refs.input2.value;
-    const email = this.refs.input3.value;
-    const phoneNumber = this.refs.input4.value;
-    const adress = this.refs.input5.value;
-    const message= this.refs.input6.value;
-
-    this.setState({ firstName, lastName, email, phoneNumber, message, adress });
-  }
-   */
