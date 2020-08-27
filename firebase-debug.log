@@ -1,0 +1,37 @@
+[debug] [2020-08-27T13:04:58.620Z] ----------------------------------------------------------------------
+[debug] [2020-08-27T13:04:58.622Z] Command:       /home/amer-wethink/.nvm/versions/node/v12.18.2/bin/node /home/amer-wethink/.nvm/versions/node/v12.18.2/bin/firebase deploy
+[debug] [2020-08-27T13:04:58.622Z] CLI Version:   8.9.1
+[debug] [2020-08-27T13:04:58.622Z] Platform:      linux
+[debug] [2020-08-27T13:04:58.622Z] Node Version:  v12.18.2
+[debug] [2020-08-27T13:04:58.622Z] Time:          Thu Aug 27 2020 14:04:58 GMT+0100 (Central European Standard Time)
+[debug] [2020-08-27T13:04:58.622Z] ----------------------------------------------------------------------
+[debug] [2020-08-27T13:04:58.623Z] 
+[debug] [2020-08-27T13:04:58.627Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-27T13:04:58.628Z] > authorizing via signed-in user
+[debug] [2020-08-27T13:04:58.628Z] [iam] checking project e-learning-horizon for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-08-27T13:04:58.630Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-08-27T13:04:58.630Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-08-27T13:04:59.075Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 27 Aug 2020 13:04:58 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-27T13:04:59.129Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/e-learning-horizon:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-08-27T13:05:00.245Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 27 Aug 2020 13:05:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=674","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-27T13:05:00.247Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/e-learning-horizon  
+ 
+[debug] [2020-08-27T13:05:00.739Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 27 Aug 2020 13:05:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'e-learning-horizon'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-08-27T13:05:00.745Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/e-learning-horizon/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-08-27T13:05:03.305Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 27 Aug 2020 13:05:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[e-learning-horizon]: beginning deploy... 
+[info] i  hosting[e-learning-horizon]: found 37 files in build 
+[debug] [2020-08-27T13:05:04.290Z] [hosting] hash cache [YnVpbGQ] stored for 37 files
+[debug] [2020-08-27T13:05:04.290Z] [hosting][hash queue][FINAL] {"max":964,"min":22,"avg":83.67567567567568,"active":0,"complete":37,"success":37,"errored":0,"retried":0,"total":37,"elapsed":969}
+[debug] [2020-08-27T13:05:04.290Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/e-learning-horizon/versions/d5520deae64a4768:populateFiles  
+ <request body omitted>
+[debug] [2020-08-27T13:05:05.538Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 27 Aug 2020 13:05:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-27T13:05:05.552Z] [hosting][populate queue][FINAL] {"max":1252,"min":1252,"avg":1252,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1263}
+[debug] [2020-08-27T13:05:05.553Z] [hosting] uploads queued: 8

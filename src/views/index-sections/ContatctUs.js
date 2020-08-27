@@ -8,6 +8,7 @@ function ContactUs() {
         <>
         <div className="section mt-5" style={{backgroundColor:'#edf9f8'}}>
         <Container className="text-center" >
+
             <Row className="justify-content-md-center">
             <Col lg="8" className="text-left">
                 <ContactUsForm />

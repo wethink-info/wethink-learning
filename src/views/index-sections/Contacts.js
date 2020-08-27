@@ -25,7 +25,7 @@ class Contacts extends Component {
           for(let email in emails) {
             newstate.push({
               id : email,
-              fullName: emails[email].firstName,
+              firstName: emails[email].firstName,
               lastName: emails[email].lastName,
               email: emails[email].email,
               phoneNumber:emails[email].phoneNumber,
@@ -52,7 +52,7 @@ class Contacts extends Component {
                         {this.state.list_emails.map(email => (
                             <ContactList
                             key={email.id}
-                            fullName={email.fullName}
+                            firstName={email.firstName}
                             lastName={email.lastName}
                             email={email.email}
                             phoneNumber={email.phoneNumber}
