@@ -6,7 +6,7 @@ function ContactUs() {
     return (
 
         <>
-        <div className="section mt-5" style={{backgroundColor:'#edf9f8'}}>
+        <div className="section mt-5 text-white" style={{backgroundColor:'#10312f'}}>
         <Container className="text-center" >
 
             <Row className="justify-content-md-center">

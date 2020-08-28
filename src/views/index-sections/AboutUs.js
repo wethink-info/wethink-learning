@@ -2,7 +2,7 @@ import React from "react";
 
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
-
+import  whyWl_Logo from '../../assets/img/whyWl_Logo.png';
 // core components
 
 const AboutUs = () => {
@@ -32,8 +32,8 @@ const AboutUs = () => {
                 <img
 
                   className="img-raised"
-                  src={require("assets/img/selective-focus-photo-of-man-using-laptop-1438081.jpg")}
-                  alt="img"
+                  src={whyWl_Logo}
+                  alt="img-why wethink learning"
                   ></img>
             </Col>
           </Row>

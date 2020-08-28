@@ -24,6 +24,9 @@ import footerAR from '../Localization/locales/ar/footer.json';
 import loginEN from '../Localization/locales/en/login.json';
 import loginFR from '../Localization/locales/fr/login.json';
 import loginAR from '../Localization/locales/ar/login.json';
+import formEN from '../Localization/locales/en/contactusForm.json';
+import formFR from '../Localization/locales/fr/contactusForm.json';
+import formAR from '../Localization/locales/ar/contactusForm.json';
 
 
  // the translations
@@ -36,7 +39,8 @@ const resources = {
     partners: partnersEN,
     widget: widgetEN,
     footer : footerEN,
-    auth : loginEN
+    auth : loginEN,
+    contactUs: formEN
 
   },
   fr: {
@@ -46,7 +50,8 @@ const resources = {
     partners: partnersFR,
     widget: widgetFR,
     footer : footerFR,
-    auth : loginFR
+    auth : loginFR,
+    contactUs: formFR
 
   },
   ar: {
@@ -56,7 +61,8 @@ const resources = {
     partners: partnersAR,
     widget: widgetAR,
     footer : footerAR,
-    auth : loginAR
+    auth : loginAR,
+    contactUs: formAR
 
   }
 };

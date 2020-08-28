@@ -12,7 +12,7 @@ function PartnersItem () {
   return (
         <Container>
           <Row>
-            <Col className="ml-auto mr-auto" md="10" xl="6">
+            <Col className="ml-auto mr-auto" md="10" lg="4">
               <Card >
                 <CardBody >
                   <TabContent
@@ -20,14 +20,16 @@ function PartnersItem () {
                     activeTab={"iconPills" + iconPills}
                   >
                     <TabPane tabId="iconPills1">
-                     <img src ={imgHope} alt="cms-logo"></img>
+                      <a href='https://hopeai.org/' target='blanck'>
+                      <img src ={imgHope} alt="hope-logo"></img>
+                      </a>
                     </TabPane>
                     
                   </TabContent>
                 </CardBody>
               </Card>
             </Col>
-            <Col className="ml-auto mr-auto" md="10" xl="6">
+            <Col className="ml-auto mr-auto" md="10" lg="4">
               <Card >
                 <CardBody >
                   <TabContent
@@ -35,14 +37,16 @@ function PartnersItem () {
                     activeTab={"iconPills" + iconPills}
                   >
                     <TabPane tabId="iconPills1">
-                     <img src ={imgLightenEduc} alt="cms-logo"></img>
+                      <a href='https://enlighteneducationcorp.com' target='blanck'>
+                      <img src ={imgLightenEduc} alt="LightenEduc-logo"></img>
+                      </a>
                     </TabPane>
                     
                   </TabContent>
                 </CardBody>
               </Card>
             </Col>
-            <Col className="ml-auto mr-auto" md="10" xl="6">
+            <Col className="ml-auto mr-auto" md="10" lg="4">
               <Card >
                 <CardBody >
                   <TabContent
@@ -50,7 +54,9 @@ function PartnersItem () {
                     activeTab={"iconPills" + iconPills}
                   >
                     <TabPane tabId="iconPills1">
-                     <img src ={imgHorizon} alt="cms-logo"></img>
+                      <a href='https://horizon-university.tn/' target='blanck'>
+                     <img src ={imgHorizon} alt="horizon-logo"></img>
+                     </a>
                     </TabPane>
                     
                   </TabContent>

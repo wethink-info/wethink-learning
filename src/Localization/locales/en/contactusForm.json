@@ -1,0 +1,15 @@
+{
+    "title_form" : "Please contact us for any reason. our staff can help you as soon as possible",
+    "firstName": "First Name",
+    "firstName_placeholder": "Your First Name",
+    "lastName": "Last Name",
+    "lastName_placeholder": "Your Last Name",
+    "email" : "Email",
+    "email_placeholder": "Your Email Adress",
+    "phone": "Phone Number",
+    "phone_placeholder": "Your Phone Number",
+    "message": "Message",
+    "message_placeholder" : "please write your message here",
+    "button_submit": "Submit",
+    "confirm_msg": "Thank you for contacting us. Your message was sent and we will reach out to you shortly!"
+}

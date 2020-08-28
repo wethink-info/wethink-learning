@@ -37,12 +37,12 @@ const IndexNavbar = ({ signout, auth, t }) => {
         document.documentElement.scrollTop > 399 ||
         document.body.scrollTop > 399
       ) {
-        setNavbarColor("");
+        setNavbarColor("navbar-transparent");
       } else if (
         document.documentElement.scrollTop < 400 ||
         document.body.scrollTop < 400
       ) {
-        setNavbarColor("navbar-transparent");
+        setNavbarColor("");
       }
     };
     window.addEventListener("scroll", updateNavbarColor);
