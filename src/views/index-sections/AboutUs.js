@@ -1,33 +1,28 @@
 import React from "react";
-
+import { withNamespaces } from 'react-i18next';
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
 import  whyWl_Logo from '../../assets/img/whyWl_Logo.png';
 // core components
 
-const AboutUs = () => {
+const AboutUs = ({ t }) => {
   return (
     <>
       <div className="section">
         <Container className="text-align">
           <Row className="justify-content-md-center">
             <Col lg="8" md="12">
-              <h2 className="title">The Mission</h2>
+              <h2 className="title">{t('aboutUs:mission')}</h2>
               <h5 className="description">
-                Increase access to high-quality education for everyone, everywhere
-                Enhance teaching and learning on campus and online
-                Advance teaching and learning through research
+              {t('aboutUs:mission_paragraph')}
               </h5>
-              <h2 className="title">Our Impact</h2>
+              <h2 className="title">{t('aboutUs:impact')}</h2>
               <h5 className="description">
-              We are proud to reflect on the impact that E-Learning WETHINK and our partner institutions
-               have had on education and learning since our founding in 2020.
+                {t('aboutUs:impact_paragraph')}
                 </h5>
-              <h2 className="title">Our Story</h2>
+              <h2 className="title">{t('aboutUs:story')}</h2>
               <h5 className="description">
-                WETHINK platform is the world’s fastest-growing enterprise learning solution, 
-                unifying learning management and prepackaged courses in an innovative 
-                platform to meet any organization’s internal and external training needs.
+                {t('aboutUs:story_paragraph')}
               </h5>
                 <img
 
@@ -44,4 +39,4 @@ const AboutUs = () => {
   );
 }
 
-export default AboutUs;
+export default withNamespaces()(AboutUs);

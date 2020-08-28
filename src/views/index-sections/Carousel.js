@@ -1,5 +1,5 @@
 import React from "react";
-
+import { withNamespaces } from 'react-i18next';
 // reactstrap components
 import {
   Container,
@@ -16,26 +16,26 @@ const items = [
   {
     src: require("assets/img/screen01.png"),
     altText: "slide_1",
-    caption: "Build your classes catalog in an easy and friendly dashboard",
+    caption: 'partners:text_slice1',
   },
   {
     src: require("assets/img/screen02.png"),
     altText: "slide_2",
-    caption: "Have a complete and granular administrative control over you platform",
+    caption: "partners:text_slice2",
   },
   {
     src: require("assets/img/screen03.png"),
     altText: "slide_3",
-    caption: "Create your courses content in an interactive interface and get control on when to publish it",
+    caption: "partners:text_slice3",
   },
   {
     src: require("assets/img/screen04.png"),
     altText: "slide_4",
-    caption: " Get on demand videoconferencing, chat, sharing, polling integrations in one place",
+    caption: "partners:text_slice4",
   }
 ];
 
-function CarouselSection() {
+function CarouselSection({ t }) {
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [animating, setAnimating] = React.useState(false);
   const onExiting = () => {
@@ -86,7 +86,7 @@ function CarouselSection() {
                     >
                       <img src={item.src} alt={item.altText} />
                       <div className="carousel-caption d-none d-md-block">
-                        <h5 style={{color:'#17a2b8'}}>{item.caption}</h5>
+                        <h5 style={{color:'#17a2b8'}}>{t('item.caption')}</h5>
                       </div>
                     </CarouselItem>
                   );
@@ -124,4 +124,4 @@ function CarouselSection() {
   );
 }
 
-export default CarouselSection;
+export default withNamespaces()(CarouselSection);
