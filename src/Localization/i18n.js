@@ -2,7 +2,6 @@ import i18n from "i18next";
 import detector from "i18next-browser-languagedetector";
 import backend from "i18next-xhr-backend";
 import { reactI18nextModule } from "react-i18next";
-
 import navbarEN from '../Localization/locales/en/navbar.json';
 import navbarFR from '../Localization/locales/fr/navbar.json';
 import navbarAR from '../Localization/locales/ar/navbar.json';
@@ -79,7 +78,7 @@ i18n
   .use(reactI18nextModule) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: "en",
+    //lng: "en",
     // Set default namespace
     defaultNS: "navbar",
     fallbackLng: "en", // use en if detected lng is not available
