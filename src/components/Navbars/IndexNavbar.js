@@ -29,7 +29,7 @@ const changeLanguage = (lng) => {
   i18n.changeLanguage(lng);
 }
 const IndexNavbar = ({ signout, auth, t }) => {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [navbarColor, setNavbarColor] = React.useState("");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
     const updateNavbarColor = () => {

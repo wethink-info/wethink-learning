@@ -24,7 +24,7 @@ import Logout from 'components/Logout.js';
 const App = (props) =>  {
         let routes = (
             <>
-                <IndexNavbar/>
+                <IndexNavbar />
                 <Switch>
                     <Route exact 
                     path="/home"
