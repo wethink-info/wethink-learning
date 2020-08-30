@@ -1,12 +1,12 @@
 {
     "lms_title": " LMS Portal",
-    "lms_paragraph_desc": "Learners, course teams and instructors use the LMS for the duration of a course; the LMS provides access to course content and support infrastructure (schedules, discussion forums, collaboration tools, student administration, certificate generation, messaging, etc.). Also supports online courses, online campuses and online study programs. Customizable learner experience reflects your brand identity and preferences unique.",
+    "lms_paragraph_desc": "The Learning Management System allows your learners and instructors to access the course content and support infrastructure (schedules, discussion forums, collaboration tools, student administration, certificate generation, messaging, etc.). The LMS can be customized to reflect your brand identity and preferences.",
     "cms_title": "CMS Portal",
-    "cms_paragraph_desc":"Cutting-edge authoring with Studio feature system. CMS empowers learning and development through custom experiences powered by the latest in instructional design. Author courses and evolve your content while live with learners . Manage your course schedule, course team, and grading policy utilize documented and open XML standards (OLX) for import / export of courses, easily import content and manage content across platforms and access rich 3rd-party tools or add additional building blocks.",
+    "cms_paragraph_desc": "The Content Management System allows your instructors to author their courses and evolve their content while live with learners. The CMS helps also to manage the course schedule, course team, and grading policy as well as the reuse of your content across accounts and platforms.",
     "visio_title": "VisioConferencing",
-    "visio_paragraph_desc": "Tools should feel like part of your management system (LMS). professional solution for teaching remote students online? provides real-time sharing of audio, video, slides, chat, and screen. Students are engaged through sharing of emoji  and breakout rooms.",
+    "visio_paragraph_desc": "The LMS is extensible with different solutions such as visioconferencing that provides real-time sharing of audio, video, slides, chat, screen and polls. Students can be more engaged through discussions in different breakout rooms.",
     "scalability_title": "Scalability",
-    "scalability_paragraph_desc": "WeThink Learning Auto Scaling monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost. Using cloud system Auto Scaling, our scalable platform can accomodate your growth. ",
+    "scalability_paragraph_desc": "WeThink Learning Auto Scaling monitors your applications and automatically adjusts capacity to maintain steady, predictable performance. Using cloud system Auto Scaling, our scalable platform can accomodate your growth. ",
     "availability_title": "Availability",
-    "availability_paragraph_desc": "WeThink Learning Platform hosted in the cloud with highly availability , security and durability that provides more continuity for courses,it’s easy to setup application available for multiple resources across multiple services in minutes."
+    "availability_paragraph_desc": "WeThink Learning Platform is hosted in the cloud with high availability, security and durability that provides more continuity and resiliency for your courses. The platform is accessible from anywhere and using any device."
 }

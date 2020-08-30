@@ -36,13 +36,15 @@ const IndexNavbar = ({ signout, auth, t }) => {
       if (
         document.documentElement.scrollTop > 399 ||
         document.body.scrollTop > 399
-      ) {
-        setNavbarColor("navbar-transparent");
+      )
+      {
+        setNavbarColor("bg-info");
       } else if (
         document.documentElement.scrollTop < 400 ||
         document.body.scrollTop < 400
-      ) {
-        setNavbarColor("");
+      )
+      {
+        setNavbarColor("navbar-transparent");
       }
     };
     window.addEventListener("scroll", updateNavbarColor);
@@ -61,18 +63,18 @@ const IndexNavbar = ({ signout, auth, t }) => {
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
+      <Navbar className={"fixed-top " + navbarColor} expand="lg">
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
               id="navbar-brand"
             >
-            <NavLink href="/home">
-            <WLearningLogo />
-            </NavLink>           
-             </NavbarBrand>
+              <NavLink href="/home">
+                <WLearningLogo />
+              </NavLink>
+            </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-            E-learning platform<br/>
+              E-learning platform<br />
               By WeThink info
             </UncontrolledTooltip>
             <button
@@ -95,34 +97,34 @@ const IndexNavbar = ({ signout, auth, t }) => {
             navbar
           >
             <Nav navbar>
-             <NavItem>
-                  <NavLink
-                      href="/home"
-                      >
-                      <i className="now-ui-icons "></i>
-                    <p>{t('home')}</p>
-                  </NavLink>
+              <NavItem>
+                <NavLink
+                  href="/home"
+                >
+                  <i className="now-ui-icons "></i>
+                  <p>{t('home')}</p>
+                </NavLink>
               </NavItem>
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
-                  href="#pablo"
+                  href="#"
                   nav
                   onClick={(e) => e.preventDefault()}
                 >
                   <i className="now-ui-icons design_app mr-1"></i>
                   <p>{t('platform')}</p>
                 </DropdownToggle>
-                <DropdownMenu data-background-color="black"> 
-                    {!auth.isEmpty ?  // isEmpty means is Not Authenticated
-                      <DropdownItem>
+                <DropdownMenu data-background-color="black">
+                  {!auth.isEmpty ?  // isEmpty means is Not Authenticated
+                    <DropdownItem>
                       <NavLink href="/Contacts-page">
-                      <i className="now-ui-icons files_box mr-1"></i>
-                      {t('contacts')}
+                        <i className="now-ui-icons files_box mr-1"></i>
+                        {t('contacts')}
                       </NavLink>
-                      </DropdownItem> 
-                    :null }
+                    </DropdownItem>
+                    : null}
                   {/* <DropdownItem>
                   <NavLink href="/Services-page">
                     <i className="now-ui-icons business_briefcase-24 mr-1"></i>
@@ -144,46 +146,46 @@ const IndexNavbar = ({ signout, auth, t }) => {
                   <DropdownItem >
                     <NavLink href="/ContactUs-page">
                       <i className="now-ui-icons ui-1_email-85 mr-1"></i>
-                    {t('contact_us')}
+                      {t('contact_us')}
                     </NavLink>
                   </DropdownItem>
-                  <DropdownItem> 
+                  <DropdownItem>
                     <NavLink href="/AboutUs-page">
                       <i className="now-ui-icons travel_info mr-1"></i>
-                    {t('about_us')}
+                      {t('about_us')}
                     </NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-              {auth.isEmpty ?
-                <NavLink href="/login" >
-                  <Button
-                    className="btn-switch btn-auth"
-                    color="info"
-                    id="upgrade-to-pro"
-                  >
-                    {t('signin')}
-                  </Button>
-                </NavLink> 
-                : null }
+                {auth.isEmpty ?
+                  <NavLink href="/login" >
+                    <Button
+                      className="btn-switch btn-auth"
+                      color="info"
+                      id="upgrade-to-pro"
+                    >
+                      {t('signin')}
+                    </Button>
+                  </NavLink>
+                  : null}
                 <UncontrolledTooltip target="#upgrade-to-pro">
-                  You are Welcome 
+                  You are Welcome
                 </UncontrolledTooltip>
               </NavItem>
               <NavItem>
-                {!auth.isEmpty ? 
+                {!auth.isEmpty ?
                   <NavLink href="/logout" >
                     <Button
-                        className="btn-switch btn-auth"
-                        color="info"
-                        id="upgrade-to-pro"
-                        onClick={() => signout()}
-                      >
-                        Log Out
+                      className="btn-switch btn-auth"
+                      color="info"
+                      id="upgrade-to-pro"
+                      onClick={() => signout()}
+                    >
+                      Log Out
                     </Button>
-                  </NavLink> 
-                : null }
+                  </NavLink>
+                  : null}
               </NavItem>
               <UncontrolledDropdown nav>
                 <DropdownToggle
@@ -193,20 +195,20 @@ const IndexNavbar = ({ signout, auth, t }) => {
                   nav
                   onClick={(e) => e.preventDefault()}
                 >
-                <i className="now-ui-icons business_globe mr-1"></i>
+                  <i className="now-ui-icons business_globe mr-1"></i>
                 </DropdownToggle>
-               <DropdownMenu data-background-color="black" >
-                 <DropdownItem onClick={() => changeLanguage('en')}>
-                   <i href="#">ENGLISH</i>
-                 </DropdownItem>
-                 <DropdownItem onClick={() => changeLanguage('fr')}>
-                   <i href="#">FRANCAIS</i>
-                 </DropdownItem>
-                 <DropdownItem onClick={() => changeLanguage('ar')}>
-                   <i href="#">العربية </i>
-                 </DropdownItem>
-               </DropdownMenu>
-               </UncontrolledDropdown>
+                <DropdownMenu data-background-color="black" >
+                  <DropdownItem onClick={() => changeLanguage('en')}>
+                    <i href="#">English</i>
+                  </DropdownItem>
+                  <DropdownItem onClick={() => changeLanguage('fr')}>
+                    <i href="#">Français</i>
+                  </DropdownItem>
+                  <DropdownItem onClick={() => changeLanguage('ar')}>
+                    <i href="#">العربية </i>
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
               <NavItem>
                 <NavLink
                   href="https://www.facebook.com/GlobalService5"

@@ -1,11 +1,10 @@
 {
-      "home": "ACCEUIL",
-      "platform": "PLATEFORME",
+      "home": "Acceuil",
+      "platform": "Plateforme",
       "services": "Services",
       "our_offers": "Nos Offres",
       "academy": "Académie",
-      "about_us": "A Propos Nous",
+      "about_us": "A Propos de Nous",
       "contact_us": "Contactez Nous",
       "signin": "Se Connecter"
-  
 }

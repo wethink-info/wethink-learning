@@ -5,10 +5,10 @@
   "password": "Password",
   "your_pass": "Your password",
   "button_signin": "Sign in",
-  "forget_pass": "Forget password",
-  "no_account": "Don't have an account yet ?",
+  "forget_pass": "Forgot password",
+  "no_account": "Don't have an account yet?",
   "button_new_account": "Create an account",
-  "reset_pass" :"Reset password",
+  "reset_pass": "Reset password",
   "back_to_signin": "Back to sign in",
   "button_reset_pass": "Reset password"
 }

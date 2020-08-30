@@ -1,16 +1,15 @@
 {
-    "title_form" : "Veuillez nous contacter pour toutes les raisons que ce soit. notre personnel peut vous aider dans les plus brefs délais",
+    "title_form": "Veuillez remplir le formulaire de contact et nous vous contacterons sous peu",
     "firstName": "Nom",
     "firstName_placeholder": "Entrer votre nom",
     "lastName": "Prénom",
     "lastName_placeholder": "Entrer votre Prénom",
-    "email" : "Email",
+    "email": "Email",
     "email_placeholder": "Entrer votre adress e-mail",
     "phone": "Numéro Téléphone",
     "phone_placeholder": "Entrer votre numéro de téléphone",
     "message": "Message",
-    "message_placeholder" : "Veuillez écrire votre message ici",
+    "message_placeholder": "Veuillez écrire votre message ici",
     "button_submit": "Envoyer",
     "confirm_msg": "Merci de nous contacter. Votre message a été envoyé et nous vous contacterons sous peu!"
-
 }

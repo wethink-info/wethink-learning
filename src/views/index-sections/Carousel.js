@@ -86,7 +86,7 @@ function CarouselSection({ t }) {
                     >
                       <img src={item.src} alt={item.altText} />
                       <div className="carousel-caption d-none d-md-block">
-                        <h5 style={{color:'#17a2b8'}}>{t('item.caption')}</h5>
+                        <h4 style={{ color: '#9a37b8', zIndex: "2000" }}>{t(item.caption)}</h4>
                       </div>
                     </CarouselItem>
                   );
