@@ -79,6 +79,7 @@ function CarouselSection({ t }) {
                 />
                 {items.map((item) => {
                   return (
+
                     <CarouselItem
                       onExiting={onExiting}
                       onExited={onExited}
@@ -86,15 +87,18 @@ function CarouselSection({ t }) {
                     >
                       <img src={item.src} alt={item.altText} />
                       <div className="carousel-caption d-none d-md-block">
-                        <h4 style={{ color: '#9a37b8', zIndex: "2000" }}>{t(item.caption)}</h4>
+                        <h4 style={{ color: '#9a37b8', zIndex: "2000", marginButtom: "-100" }}>{t(item.caption)}</h4>
                       </div>
+
                     </CarouselItem>
+
+
                   );
                 })}
                 <a
                   className="carousel-control-prev"
                   data-slide="prev"
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => {
                     e.preventDefault();
                     previous();

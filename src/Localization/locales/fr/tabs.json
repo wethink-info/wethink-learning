@@ -4,7 +4,7 @@
     "cms_title": "Portail CMS",
     "cms_paragraph_desc": "Le CMS permet à vos instructeurs de créer leurs cours et de faire évoluer leur contenu en direct avec les apprenants. Le CMS aide également à gérer le calendrier des cours, l'équipe de cours et la politique de notation ainsi que la réutilisation de votre contenu sur plusieurs comptes et plates-formes.",
     "visio_title": "Vidéo Conférence",
-    "visio_paragraph_desc": "Le LMS est extensible avec différentes solutions telles que la visioconférence qui permet le partage en temps réel de l'audio, de la vidéo, des diapositives, du chat, de l'écran et des sondages. Les étudiants peuvent être plus impliqués grâce à des discussions dans différentes salles de visioconf.",
+    "visio_paragraph_desc": "Le LMS est extensible avec différentes solutions comme les vidéoconférences qui permet entre autres le partage des diapositives, chat, écran et sondages. Les étudiants peuvent avoir des discussions dans différentes salles de vidéoconf.",
     "scalability_title": "Évolutivité",
     "scalability_paragraph_desc": "WeThink Learning Auto Scaling surveille votre instance et ajuste automatiquement la capacité pour maintenir une performance stable et prévisible. En utilisant le système cloud Auto Scaling, notre plateforme évolutive peut s'adapter à vos besoins.",
     "availability_title": "Disponibilité",
