@@ -87,7 +87,16 @@ function CarouselSection({ t }) {
                     >
                       <img src={item.src} alt={item.altText} />
                       <div className="carousel-caption d-none d-md-block">
-                        <h4 style={{ color: '#9a37b8', zIndex: "2000", marginButtom: "-100" }}>{t(item.caption)}</h4>
+                        <h4 style={{
+                          color: '#2CA8FF',
+                          zIndex: "2000",
+                          font: "bold 20px Helvetica, Arial, Sans-Serif",
+                          textShadow: "1px 1px gray,2px 2px black",
+                          webkitTransition: "all 0.12s ease-out",
+                          mozTransition: "all 0.12s ease-out",
+                          msTransition: "all 0.12s ease-out",
+                          oTransition: "all 0.12s ease-out",
+                        }}>{t(item.caption)}</h4>
                       </div>
 
                     </CarouselItem>
