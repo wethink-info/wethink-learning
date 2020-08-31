@@ -1,0 +1,13 @@
+.minFooter {
+    display: flex;
+    justify-content: space-around
+}
+
+
+@media (max-width: 420px){
+    .minFooter {
+    display: flex;
+    justify-content: space-between;
+    }
+
+}

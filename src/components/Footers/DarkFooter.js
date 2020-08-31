@@ -6,10 +6,11 @@ import {
   Container,
   NavLink,
  } from "reactstrap";
+import './DarkFooter.css';
 
 function DarkFooter({ t }) {
   return (
-    <footer className="footer" data-background-color="black" fixed="bottom" >
+    <footer className="footer minFooter" data-background-color="black" fixed="bottom" >
       <Container>
         <nav>
           <ul>

@@ -12,7 +12,7 @@ const AboutUs = ({ t }) => {
         <Container className="text-align">
           <Row className="justify-content-md-center">
             <Col lg="8" md="12">
-              <h2 className="title">{t('aboutUs:mission')}</h2>
+              <h2 className="title mt-5" >{t('aboutUs:mission')}</h2>
               <h5 className="description">
                 {t('aboutUs:mission_paragraph')}
               </h5>

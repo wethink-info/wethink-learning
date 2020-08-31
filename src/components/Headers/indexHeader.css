@@ -3,3 +3,15 @@
    text-transform: uppercase;
     font-weight: 900;
 }
+
+.headerBrand {
+    margin-top: 295px;
+}
+
+
+@media (max-width: 420px){
+    .headerBrand {
+        margin-top: 50px;
+    }
+
+}

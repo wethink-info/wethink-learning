@@ -104,10 +104,10 @@ function CarouselSection({ t }) {
 
                   );
                 })}
-                <a
+                <a 
                   className="carousel-control-prev"
                   data-slide="prev"
-                  href="#"
+                  href="#"// eslint-disable-next-line
                   onClick={(e) => {
                     e.preventDefault();
                     previous();

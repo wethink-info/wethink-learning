@@ -51,7 +51,7 @@ const handleOnChangeName = (e) => {
           {isSubmit ?
                 <Form className="formBox">
                 <Row>
-                <div class="container-fluid d-flex col-9">
+                <div class="container-fluid title-h2 d-flex col-9">
                 <h3> {t('contactUs:title_form')}</h3>
                 </div>
                 </Row>
@@ -62,6 +62,8 @@ const handleOnChangeName = (e) => {
                     <Input type="text" name="name" value={firstName} placeholder={t('contactUs:firstName_placeholder')} onChange={handleOnChangeName} required/>
                   </FormGroup>
                   </Col>
+                </Row>
+                <Row>
                   <Col>
                   <FormGroup>
                     <Label >{t('contactUs:lastName')}</Label>
@@ -74,20 +76,31 @@ const handleOnChangeName = (e) => {
                   <FormGroup>
                   <Label >{t('contactUs:email')}</Label>
                   <Input type="email" name="email" value={email} placeholder={t('contactUs:email_placeholder')} onChange={handleOnChangeemail} required/>
-                </FormGroup>
+                  </FormGroup>
                   </Col>
+                </Row>
+                <Row>
                   <Col>
                   <FormGroup>
                   <Label >{t('contactUs:phone')}</Label>
                   <Input type="text" name="number" value={phoneNumber} placeholder={t('contactUs:phone_placeholder')} onChange={handleOnChangeNumber} required/>
-                </FormGroup>
+                  </FormGroup>
                   </Col>
                 </Row>
-                <FormGroup>
+                <Row>
+                <Col>
+                  <FormGroup>
                   <Label >{t('contactUs:message')}</Label>
                   <Input type="textarea" name="message" value={message} placeholder={t('contactUs:message_placeholder')} onChange={handleOnChangeMessage} required/>
-                </FormGroup>
-                <Button onClick={createContact}>{t('contactUs:button_submit')}</Button>
+                  </FormGroup>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col className="text-center">
+                  <Button className="button" onClick={createContact}>{t('contactUs:button_submit')}</Button>
+                  </Col>
+                </Row>
+                
               </Form> : 
               <Jumbotron>
                 <div class="container-fluid d-flex text-center mt-5 mb-5">
