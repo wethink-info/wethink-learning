@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from "reactstrap";
-import ContactUsForm from 'components/ContactUs/contactUsForm';
+import ContactUsFormHook from 'components/ContactUs/contactsusformHooks';
 
 function ContactUs() {
     return (
@@ -11,7 +11,8 @@ function ContactUs() {
 
             <Row className="justify-content-md-center">
             <Col lg="8" className="text-left">
-                <ContactUsForm />
+               
+                <ContactUsFormHook />
             </Col>
             </Row>
         </Container>
