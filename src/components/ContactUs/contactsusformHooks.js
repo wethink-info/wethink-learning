@@ -68,7 +68,7 @@ function ContactUsFormHook({ t }) {
       <Row>
         <Col>
           <FormGroup>
-            <textarea className="form__input" type="textarea" placeholder={t('contactUs:message_placeholder')} name="message" ref={register({maxLength: 500})} />
+            <textarea className="form__input h-25" type="textarea" placeholder={t('contactUs:message_placeholder')} name="message" ref={register({maxLength: 500})} />
             {errors.message && <p id="required">This field is required</p>}
             <label className="form__label"> {t('contactUs:message')} </label>
           </FormGroup>

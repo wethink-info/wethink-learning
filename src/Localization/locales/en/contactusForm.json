@@ -9,7 +9,7 @@
     "phone": "Phone Number",
     "phone_placeholder": "Your Phone Number",
     "message": "Message",
-    "message_placeholder": "please write your message here",
+    "message_placeholder": "please write your message here...",
     "button_submit": "Submit",
     "confirm_msg": "Thank you for contacting us. Your message was sent and we will reach out to you shortly!"
 }

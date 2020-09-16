@@ -19,7 +19,7 @@ function NucleoIcons({ t }) {
               <Button
                 className="btn-round mr-1"
                 color="info"
-                href="https://students.wethink.info"
+                href="https://students.horizon-university.tn/"
                 size="lg"
                 target="_blank"
               >

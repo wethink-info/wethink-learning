@@ -9,7 +9,7 @@
     "phone": "رقم الهاتف",
     "phone_placeholder": "  الرجاء كتابة رقم الهاتف هنا",
     "message": "الرسالة",
-    "message_placeholder" : "رجاء اكتب رسالتك هنا",
+    "message_placeholder" : " ...أكتب رسالتك هنا",
     "button_submit": "إرسال",
     "confirm_msg": "أشكركم على الاتصال بنا. تم ارسال رسالتك وسوف نتصل بك قريبا!"
 }
